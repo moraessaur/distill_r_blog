@@ -1,0 +1,221 @@
+---
+title: 'Curriculum vitae - Lucas Costa Moraes'
+subtitle: 'www.lucasmoraes.io <br> Biólogo, Analista e Fotógrafo <br> moraessaur@gmail.com <br>'
+output: 
+  html_document:
+    includes:
+      after_body: footer.html
+    theme: cerulean
+  
+---
+
+<style type="text/css">
+body{ /* Normal  */
+      text-align: justify
+      font-size: 25px;
+  }
+td {  /* Table  */
+  font-size: 8px;
+}
+h1.title {
+  text-align: center;
+  font-size: 30px;
+  color: #636363;
+}
+
+h3.subtitle {
+  font-size: 16px;
+  text-align: center;
+  color: #bfbfbf;
+  text-decoration: none;
+  pointer-events: none;
+}
+h1 { /* Header 1 */
+  font-size: 28px;
+  color: Black;
+}
+h2 { /* Header 2 */
+  font-size: 20px;
+  color: Black;
+}
+h3 { /* Header 3 */
+  font-size: 18px;
+  color: Black;
+}
+code.r{ /* Code block */
+    font-size: 12px;
+}
+pre { /* Code block - determines code spacing between lines */
+    font-size: 14px;
+}
+</style>
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+knitr::knit_hooks$set(
+   error = function(x, options) {
+     paste('\n\n<div class="alert alert-danger">',
+           gsub('##', '\n', gsub('^##\ Error', '**Error**', x)),
+           '</div>', sep = '\n')
+   },
+   warning = function(x, options) {
+     paste('\n\n<div class="alert alert-warning">',
+           gsub('##', '\n', gsub('^##\ Warning:', '**Warning**', x)),
+           '</div>', sep = '\n')
+   },
+   message = function(x, options) {
+     paste('\n\n<div class="alert alert-info">',
+           gsub('##', '\n', x),
+           '</div>', sep = '\n')
+   }
+)
+```
+
+
+# **Experiência profissional recente**
+***
+
+## **2018 - 2020: Consultoria independente em análises de dados**
+***
+
+Atualmente atuo como analista de dados independente, atendendo demandas de projetos científicos em geral. A maior parte do meu trabalho é desenvolvido usando R, embora também use Python, SQL, HTML e CSS, em menor escala. A isso, soma-se minha experiência com biologia da conservação e filogenia molecular.
+
+Minhas principais atividades incluem:
+
+* Limpeza e formatação de dados tabulares
+* Extração de dados de bases online
+* Análises estatisticas
+  + Estatísticas de sumarização
+  + Análises multivariadas
+  + Bootstrap
+  + Implementação de árvores de decisão 
+* Visualização de dados
+* Elaboração de funções e pipelines customizados
+* Elaboração de relatórios de análises de dados
+* Insights e formulação de perguntas
+
+
+
+<br>
+
+##  **2013-2018: Centro Nacional de Conservação da Flora (CNCFlora/JBRJ/MMA)**
+***
+
+### **Programador R:**
+***
+
+* Extração, compilação e limpeza de dados de bases da biodiversidade.
+* Análise de dados e geração relatórios sobre espécies avaliadas para atividades internas e externas e monitoramento de progresso.
+* Análise de dados  para otimização da escolha de espécies para avaliação de risco e resolução de problemas técnicos para melhoria de resultados (**e.g.:** detecção de lacunas de informação).
+* Programação de scripts para demandas em geral (**e.g.:** limpeza e formatação de dados não estruturados, conversão de dados e tabelas, identificação de incronguências)
+
+
+### **Analista ambiental - Equipe Lista Vermelha:**
+***
+
+* Avaliação do risco de extinção cerca de 3.000 espécies de plantas nativas do Brasil, para consolidação da Lista Nacional Oficial de Espécies Ameaçadas, junto a uma vasta rede de especialistas, em parcerias nacionais e internacionais. 
+
+* Editoração e redação de relatórios, material de divulgação, capítulos de livros e textos técnico/científicos, em português e inglês.
+
+* Coleta e tratamento de material botânico em campo
+
+* Principais projetos de atuação:
+  + [Unidades de conservação do estado do Rio de Janeiro: análises e estratégias para conservação da flora endêmica ameaçada.](http://fmarj.org/projetos/documentos/unidades-de-conservacao-do-estado-do-rio-de-janeiro-analises-e-estrategias-para-conservacao-da-flora-endemica-ameacada)
+  + [Global Trees Campaign](https://globaltrees.org/)
+  + [Livro Vermelho da Flora Endêmica do estado do Rio de Janeiro](http://dspace.jbrj.gov.br/jspui/handle/doc/92)
+<br> 
+
+### **Fotografia, edição de imagens e editoração de produtos:**
+***
+
+* Fotografia em campo de expedições botânicas e atividades institucionais:
+  + Espécies *in loco* e fitofisionomias
+  + Atividades de campo e preparo de material
+  + Impactos antrópicos
+  + Registro de eventos institucionais (**e.g.:** workshops e reuniões)
+* Edição de imagens e editoração de documentos para fins de divulgacao, relatórios científicos, e manuais.
+* Auxílio no desenvolvimento do [repositório de imagens institucional do DIPEQ/JBRJ](http://dados.jbrj.gov.br/imagens/pages/user_request.php).
+
+
+# **Capacitação técnica**
+***
+
+## Programação e ferramentas de *data science*:
+***
+
+* R avançado:
+  + Ampla experiência no uso de pacotes de R para acessar e extrair informações de bases de dados da biodiversidade, tanto no âmbito da biologia da conservação como da genética (**e.g**: GBIF, Flora 2020, Lista Vermelha da IUCN, GenBank, Tropicos).
+  + Programação funcional, manipulação de data frames, transformação de dados, limpeza e publicação.
+  + Análise de dados usando o `tidyverse` e r-base.
+    + Visualização de dados com `ggplot2` e criação de relatórios usando `R markdown`.
+  + R Shiny básico para criação de aplicativos
+* Programação intermediária em python:
+  + Conhecimento de bibliotecas de data science como `pandas`, `Matplotlib` e `SeaBorn`.
+  + Programação cruzada com `R Markdown` ou `reticulate`.
+* Conhecimento intermediário de git, github, html e css.
+* Acostumando a trabalhar em linux (Ubuntu)
+* Análises estatísticas:
+  + Análises explotratórias
+  + Análises multivariadas
+  + Testes de significância
+  + Bootstrap
+  + Árvores de decisão
+  + GLM
+
+
+## Biologia:
+***
+
+
+* Capacitado na implementação do [Sistema de Categorias e Critérios da Lista Vermelha da IUCN](https://www.iucnredlist.org/resources/categories-and-criteria):
+  + Avaliação do risco de extinção de mais de 3.000 espécies da flora brasileira.
+  + Experiência no treinamento de avaliadores de risco.
+* Membro da *Global Tree Specialist Group* (GTSG/IUCN/SSC)
+* Membro da *Brazil Plant Red List Authority* (IUCN/SSC - 2013-2018)
+* Experiência em campo
+  + Coleta e preparo de material botânico em diferentes fitofisionomias continentais
+  + Experiência como auxiliar em expedições insulares
+* Experiência com filogenia molecular, diferentes metodologias e *software*
+<br>  
+
+
+## Fotografia
+***
+
+* Experiência com fotografia DSLR e editoração de documentos
+  + Fotografia em condições adversas
+  + Adobe Photoshop CC
+  + Adobe Indesign para editoração de livros
+  + Adobe Lightroom & Camera Raw
+  + Equipamentos fotográficos DSLR nikon
+
+
+## Capacitação adicional:
+***
+
+* Inglês fluente - Pontuação TOEFL - 107 (2016). Fala, escrita e leitura.
+  + Apresentações e reuniões em inglês
+  + Tradução e revisão de textos cientificos e relatórios
+* Gerenciamento de projetos com Evernote & método Scrum
+* Acostumado a trabalhar com grandes redes de especialistas de áreas distintas, em comunicação constante, nacionais ou estrangeiros.
+* Acostumado a trabalhar em projetos interdisciplinares com equipes de backgrounds distintos.
+* Carteira de habilitação (B) e certificação PADI.
+
+# **Formação acadêmica**
+***
+## **Ciências biológicas - Universidade Federal do Rio de Janeiro**
+***
+
+Sou mestre (2018) e bacharel (2012) em genética pela Universidade Federal do Rio de Janeiro (UFRJ). Em ambos projetos, procurei fazer uso da bioinformática para investigar a relação entre a conservação e história evolutiva de diferentes grupos. Em meu mestrado, analisei a diversidade filogenética de grupos de plantas nativas do Brasil, cruzando dados de filogenia, registros de ocorrência, conservação e taxonomia. Em meu bacharelado, analisei o tempo de especiação de golfinhos do gênero *Sotalia*, usando inferência bayesiana. Em ambos casos, fui orientado pelo [Professor Doutor Carlos Guerra Schrago](https://www.researchgate.net/profile/Carlos_Schrago). Em ambas especializações, fiz vasto uso da bioinformática para processar dados e responder perguntas.
+
+<br>
+
+
+```{r,echo=FALSE}
+message('Um pouco mais da minha trajetória pode ser vista em meu [**site pessoal**](www.lucasmoraes.io), bem como meu código em meu [**GitHub**](https://github.com/moraessaur) ou [**GitPages**](https://moraessaur.github.io/flora2020_analysis/). Parte da minha fotografia está no meu [**instagram**](). Minhas publicações, cursos e outros projetos científicos podem ser conferidos em meu [**Research Gate**](https://www.researchgate.net/profile/Lucas_Moraes5?ev=hdr_xprf) ou [**Currículo Lattes**](http://lattes.cnpq.br/7618801649734385).')
+```
+
+
+
+

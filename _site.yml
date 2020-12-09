@@ -1,0 +1,15 @@
+name: "distill_blog_moraessaur"
+title: "Meu humilde blog"
+description: |
+  My Blog
+output_dir: "docs"
+navbar:
+  logo: img/cloud.svg
+  right:
+    - text: "Início"
+      href: index.html
+    - text: "Sobre"
+      href: about.html
+    - text: "cv"
+      href: cv.html
+output: distill::distill_article
