@@ -44,8 +44,11 @@ df_master <- read_delim(file="https://www.dropbox.com/s/v19ogg6pmm3iade/df_maste
 Das 12 colunas ddessa tabela, vou usar as informações contidas em três:
 
 1. `desc_year`: contém o ano de descrição da planta que é basicamente quando ela ficou conhecida pela ciência. 
-2. `scientific_name`: o nome científico da espécie.
-3. 
+2. `scientific_name`: o nome científico.
+3. `states`: estados da federação em que a espécie ocorre.
+4. `major_group`: a qual grande grupo taxonômico ela pertence.
+
+Vou fazer minhas análises e construir as visualizações com base nessas informações e derivações delas.
 
 
 
