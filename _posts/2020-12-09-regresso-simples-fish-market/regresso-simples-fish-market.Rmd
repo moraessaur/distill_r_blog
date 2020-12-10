@@ -6,6 +6,9 @@ author:
   - name: Lucas Moraes.
     url: https://lucasmoraes.io
 date: 11-09-2020
+categories:
+  - Regressão linear
+  - Distância de Cook's
 output:
   distill::distill_article:
     toc: true

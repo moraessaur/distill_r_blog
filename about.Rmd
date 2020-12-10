@@ -1,9 +1,16 @@
 ---
-title: "About this blog"
-description: |
-  Some additional details about the blog
+title: "Sobre esse blog"
+description: " "
+  
 ---
+
+<style>
+body {
+text-align: justify}
+</style>
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
 ```
+
+Meu nome é Lucas Moraes, sou analista de dados, biólogo, cientista e fotógrafo. Essa página é dedicada à alguns projetos, análises e assuntos em geral que quero compartilhar, também já servindo de portfolio para alguns tipos de atividades com as quais tenho me envolvido. Tenho atuado como analista de dados independente para projetos acadêmicos (e não acadêmicos também), fazendo uso principalmente de programação em R e ferramentas de data science. Caso se interesse em saber mais sobre minha trajetória ou entrar em contato, sugiro uma visita a meu [site pessoal](www.lucasmoraes.io) ou mesmo um email para moraessaur@gmail.com!

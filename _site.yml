@@ -1,5 +1,6 @@
 name: "distill_blog_moraessaur"
 title: "Lucas Moraes"
+theme: default_theme.css
 description: |
   My Blog
 output_dir: "docs"
@@ -12,4 +13,6 @@ navbar:
       href: about.html
     - text: "cv"
       href: cv.html
+    - icon: fa fa-github
+      href: "https://github.com/moraessaur/"
 output: distill::distill_article
