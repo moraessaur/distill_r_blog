@@ -41,7 +41,11 @@ df_master <- read_delim(file="https://www.dropbox.com/s/v19ogg6pmm3iade/df_maste
                         delim="\t")
 )
 ```
+Das 12 colunas ddessa tabela, vou usar as informações contidas em três:
 
+1. `desc_year`: contém o ano de descrição da planta que é basicamente quando ela ficou conhecida pela ciência. 
+2. `scientific_name`: o nome científico da espécie.
+3. 
 
 
 
