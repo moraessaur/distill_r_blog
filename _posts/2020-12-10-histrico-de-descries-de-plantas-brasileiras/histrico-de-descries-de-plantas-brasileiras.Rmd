@@ -50,6 +50,17 @@ Das 12 colunas ddessa tabela, vou usar as informações contidas em três:
 
 Vou fazer minhas análises e construir as visualizações com base nessas informações e derivações delas.
 
+# Descrições ao longo do tempo
+***
+
+Como botânico, sei que o número de descrições de plantas brasileiras vem aumentando ao longo dos anos. Mas queria entender como que esses números se comportaram ao longo do tempo. 
+
+
+
+
+
+
+
 
 
 
