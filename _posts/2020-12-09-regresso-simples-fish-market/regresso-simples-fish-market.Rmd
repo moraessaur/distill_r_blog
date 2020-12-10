@@ -76,7 +76,7 @@ Vou desenvolver isso um pouco mais a frente, mas por hora, como vou fazer uma re
 
 Abaixo, os coeficientes do modelo:
 
-```{r}
+```{r,preview=TRUE}
 lm(Weight~Length3,data=fish)
 ```
 
