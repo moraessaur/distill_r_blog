@@ -35,6 +35,8 @@ Os dados estão organizados em uma tabela denominada `df_master` e contém uma s
 ```{r}
 library(tidyverse)
 library(rmarkdown)
+library(ggExtra)
+library(cowplot)
 
 paged_table( 
 df_master <- read_delim(file="https://www.dropbox.com/s/v19ogg6pmm3iade/df_master.txt?dl=1",
@@ -53,7 +55,46 @@ Vou fazer minhas análises e construir as visualizações com base nessas inform
 # Descrições ao longo do tempo
 ***
 
-Como botânico, sei que o número de descrições de plantas brasileiras vem aumentando ao longo dos anos. Mas queria entender como que esses números se comportaram ao longo do tempo. 
+Como botânico, sei que o número de descrições de plantas brasileiras vem aumentando ao longo dos anos. Mas quero entender como que esses números se comportaram ao longo do tempo. Para isso agrupei o número de espécies descritas por ano e plotei um gráfico de linhas. Já aproveitei o trabalho e dividi também as informações por século, colocando diferentes cores para cada um, no gráfico:
+
+```{r}
+p1 <- df_master %>% 
+  count(desc_year) %>% 
+  mutate(desc_century = case_when(desc_year < 1800 ~ "Século 18",
+                                      desc_year >= 1800 & desc_year < 1900 ~ "Século 19",
+                                      desc_year >= 1900 & desc_year < 2000 ~ "Século 20",
+                                      desc_year > 2000 ~ "Século 21")) %>% na.omit() %>% 
+  ggplot(aes(x=desc_year,y=n,color=desc_century)) +
+  geom_line(aes(group=1)) + coord_cartesian(ylim = c(0,900), xlim = c(1750,2020)) +
+  theme_bw() +
+  removeGridX() +
+  theme(panel.border = element_blank()) + geom_smooth(aes(group=1),alpha=0.1, linetype = 'dashed', size = 0.5, color = 'black') +
+geom_text(aes(x = 1920, y = 750, label = "855 espécies \ndescritas em 2001"), 
+             hjust = 0, 
+             vjust = 0.5, 
+             lineheight = 0.8,
+             colour = "#555555", 
+             label.size = NA, 
+             size = 4) +
+  geom_curve(aes(x = 2001, y = 855, xend = 1980, yend = 800),
+                             colour = "#555555", 
+                             size=0.5, 
+                             curvature = 0.2,
+                             arrow = arrow(length = unit(0.03, "npc"))) +
+  scale_color_manual(values = c("#1380A1","#990000", "#FAAB18","#588300")) +
+  scale_x_continuous(limits=c(1750,2020), breaks = seq(1750,2020,50)) + xlab('') +
+  theme(legend.title = element_blank()) + ggtitle('Número de descrições anuais de espécies no Brasil de 1750 a 2020') +
+  ylab("Total de espécies") + xlab("Ano") +
+  scale_y_continuous(limits = c(0,800),breaks=seq(0,800,150)) +
+  geom_curve(aes(x = 1990, y = 750, xend = 2005, yend = 750), 
+                             colour = "#555555", 
+                             size=0.5, 
+                             curvature = 0.2,
+                             arrow = arrow(length = unit(0.03, "npc")))
+
+p1
+```
+
 
 
 

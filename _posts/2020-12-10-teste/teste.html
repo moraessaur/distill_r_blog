@@ -1,0 +1,1532 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+  <meta name="generator" content="distill" />
+
+  <style type="text/css">
+  /* Hide doc at startup (prevent jankiness while JS renders/transforms) */
+  body {
+    visibility: hidden;
+  }
+  </style>
+
+ <!--radix_placeholder_import_source-->
+ <!--/radix_placeholder_import_source-->
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css" data-origin="pandoc">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ad0000; } /* Alert */
+code span.an { color: #5e5e5e; } /* Annotation */
+code span.at { color: #20794d; } /* Attribute */
+code span.bn { color: #ad0000; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007ba5; } /* ControlFlow */
+code span.ch { color: #20794d; } /* Char */
+code span.cn { color: #8f5902; } /* Constant */
+code span.co { color: #5e5e5e; } /* Comment */
+code span.cv { color: #5e5e5e; font-style: italic; } /* CommentVar */
+code span.do { color: #5e5e5e; font-style: italic; } /* Documentation */
+code span.dt { color: #ad0000; } /* DataType */
+code span.dv { color: #ad0000; } /* DecVal */
+code span.er { color: #ad0000; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #ad0000; } /* Float */
+code span.fu { color: #4758ab; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #5e5e5e; } /* Information */
+code span.kw { color: #007ba5; } /* Keyword */
+code span.op { color: #5e5e5e; } /* Operator */
+code span.ot { color: #007ba5; } /* Other */
+code span.pp { color: #ad0000; } /* Preprocessor */
+code span.sc { color: #20794d; } /* SpecialChar */
+code span.ss { color: #20794d; } /* SpecialString */
+code span.st { color: #20794d; } /* String */
+code span.va { color: #111111; } /* Variable */
+code span.vs { color: #20794d; } /* VerbatimString */
+code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
+</style>
+
+  <!--radix_placeholder_meta_tags-->
+  <title>teste</title>
+
+  <meta property="description" itemprop="description" content="A short description of the post."/>
+
+
+  <!--  https://schema.org/Article -->
+  <meta property="article:published" itemprop="datePublished" content="2020-12-10"/>
+  <meta property="article:created" itemprop="dateCreated" content="2020-12-10"/>
+  <meta name="article:author" content="Lucas Moraes"/>
+
+  <!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
+  <meta property="og:title" content="teste"/>
+  <meta property="og:type" content="article"/>
+  <meta property="og:description" content="A short description of the post."/>
+  <meta property="og:locale" content="en_US"/>
+
+  <!--  https://dev.twitter.com/cards/types/summary -->
+  <meta property="twitter:card" content="summary"/>
+  <meta property="twitter:title" content="teste"/>
+  <meta property="twitter:description" content="A short description of the post."/>
+
+  <!--/radix_placeholder_meta_tags-->
+  <!--radix_placeholder_rmarkdown_metadata-->
+
+  <script type="text/json" id="radix-rmarkdown-metadata">
+  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","author","date","output"]}},"value":[{"type":"character","attributes":{},"value":["teste"]},{"type":"character","attributes":{},"value":["A short description of the post.\n"]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","url"]}},"value":[{"type":"character","attributes":{},"value":["Lucas Moraes"]},{"type":"character","attributes":{},"value":["https://lucasmoraes.io"]}]}]},{"type":"character","attributes":{},"value":["12-10-2020"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["self_contained"]}},"value":[{"type":"logical","attributes":{},"value":[false]}]}]}]}
+  </script>
+  <!--/radix_placeholder_rmarkdown_metadata-->
+  
+  <script type="text/json" id="radix-resource-manifest">
+  {"type":"character","attributes":{},"value":["teste_files/figure-html5/unnamed-chunk-2-1.png","teste_files/figure-html5/unnamed-chunk-5-1.png"]}
+  </script>
+  <!--radix_placeholder_navigation_in_header-->
+  <!--/radix_placeholder_navigation_in_header-->
+  <!--radix_placeholder_distill-->
+
+  <style type="text/css">
+
+  body {
+    background-color: white;
+  }
+
+  .pandoc-table {
+    width: 100%;
+  }
+
+  .pandoc-table>caption {
+    margin-bottom: 10px;
+  }
+
+  .pandoc-table th:not([align]) {
+    text-align: left;
+  }
+
+  .pagedtable-footer {
+    font-size: 15px;
+  }
+
+  d-byline .byline {
+    grid-template-columns: 2fr 2fr;
+  }
+
+  d-byline .byline h3 {
+    margin-block-start: 1.5em;
+  }
+
+  d-byline .byline .authors-affiliations h3 {
+    margin-block-start: 0.5em;
+  }
+
+  .authors-affiliations .orcid-id {
+    width: 16px;
+    height:16px;
+    margin-left: 4px;
+    margin-right: 4px;
+    vertical-align: middle;
+    padding-bottom: 2px;
+  }
+
+  d-title .dt-tags {
+    margin-top: 1em;
+    grid-column: text;
+  }
+
+  .dt-tags .dt-tag {
+    text-decoration: none;
+    display: inline-block;
+    color: rgba(0,0,0,0.6);
+    padding: 0em 0.4em;
+    margin-right: 0.5em;
+    margin-bottom: 0.4em;
+    font-size: 70%;
+    border: 1px solid rgba(0,0,0,0.2);
+    border-radius: 3px;
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+
+  d-article table.gt_table td,
+  d-article table.gt_table th {
+    border-bottom: none;
+  }
+
+  .html-widget {
+    margin-bottom: 2.0em;
+  }
+
+  .l-screen-inset {
+    padding-right: 16px;
+  }
+
+  .l-screen .caption {
+    margin-left: 10px;
+  }
+
+  .shaded {
+    background: rgb(247, 247, 247);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  .shaded .html-widget {
+    margin-bottom: 0;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  .shaded .shaded-content {
+    background: white;
+  }
+
+  .text-output {
+    margin-top: 0;
+    line-height: 1.5em;
+  }
+
+  .hidden {
+    display: none !important;
+  }
+
+  d-article {
+    padding-top: 2.5rem;
+    padding-bottom: 30px;
+  }
+
+  d-appendix {
+    padding-top: 30px;
+  }
+
+  d-article>p>img {
+    width: 100%;
+  }
+
+  d-article h2 {
+    margin: 1rem 0 1.5rem 0;
+  }
+
+  d-article h3 {
+    margin-top: 1.5rem;
+  }
+
+  d-article iframe {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    margin-bottom: 2.0em;
+    width: 100%;
+  }
+
+  /* Tweak code blocks */
+
+  d-article div.sourceCode code,
+  d-article pre code {
+    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+  }
+
+  d-article pre,
+  d-article div.sourceCode,
+  d-article div.sourceCode pre {
+    overflow: auto;
+  }
+
+  d-article div.sourceCode {
+    background-color: white;
+  }
+
+  d-article div.sourceCode pre {
+    padding-left: 10px;
+    font-size: 12px;
+    border-left: 2px solid rgba(0,0,0,0.1);
+  }
+
+  d-article pre {
+    font-size: 12px;
+    color: black;
+    background: none;
+    margin-top: 0;
+    text-align: left;
+    white-space: pre;
+    word-spacing: normal;
+    word-break: normal;
+    word-wrap: normal;
+    line-height: 1.5;
+
+    -moz-tab-size: 4;
+    -o-tab-size: 4;
+    tab-size: 4;
+
+    -webkit-hyphens: none;
+    -moz-hyphens: none;
+    -ms-hyphens: none;
+    hyphens: none;
+  }
+
+  d-article pre a {
+    border-bottom: none;
+  }
+
+  d-article pre a:hover {
+    border-bottom: none;
+    text-decoration: underline;
+  }
+
+  @media(min-width: 768px) {
+
+  d-article pre,
+  d-article div.sourceCode,
+  d-article div.sourceCode pre {
+    overflow: visible !important;
+  }
+
+  d-article div.sourceCode pre {
+    padding-left: 18px;
+    font-size: 14px;
+  }
+
+  d-article pre {
+    font-size: 14px;
+  }
+
+  }
+
+  figure img.external {
+    background: white;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.1);
+    padding: 18px;
+    box-sizing: border-box;
+  }
+
+  /* CSS for d-contents */
+
+  .d-contents {
+    grid-column: text;
+    color: rgba(0,0,0,0.8);
+    font-size: 0.9em;
+    padding-bottom: 1em;
+    margin-bottom: 1em;
+    padding-bottom: 0.5em;
+    margin-bottom: 1em;
+    padding-left: 0.25em;
+    justify-self: start;
+  }
+
+  @media(min-width: 1000px) {
+    .d-contents.d-contents-float {
+      height: 0;
+      grid-column-start: 1;
+      grid-column-end: 4;
+      justify-self: center;
+      padding-right: 3em;
+      padding-left: 2em;
+    }
+  }
+
+  .d-contents nav h3 {
+    font-size: 18px;
+    margin-top: 0;
+    margin-bottom: 1em;
+  }
+
+  .d-contents li {
+    list-style-type: none
+  }
+
+  .d-contents nav > ul {
+    padding-left: 0;
+  }
+
+  .d-contents ul {
+    padding-left: 1em
+  }
+
+  .d-contents nav ul li {
+    margin-top: 0.6em;
+    margin-bottom: 0.2em;
+  }
+
+  .d-contents nav a {
+    font-size: 13px;
+    border-bottom: none;
+    text-decoration: none
+    color: rgba(0, 0, 0, 0.8);
+  }
+
+  .d-contents nav a:hover {
+    text-decoration: underline solid rgba(0, 0, 0, 0.6)
+  }
+
+  .d-contents nav > ul > li > a {
+    font-weight: 600;
+  }
+
+  .d-contents nav > ul > li > ul {
+    font-weight: inherit;
+  }
+
+  .d-contents nav > ul > li > ul > li {
+    margin-top: 0.2em;
+  }
+
+
+  .d-contents nav ul {
+    margin-top: 0;
+    margin-bottom: 0.25em;
+  }
+
+  .d-article-with-toc h2:nth-child(2) {
+    margin-top: 0;
+  }
+
+
+  /* Figure */
+
+  .figure {
+    position: relative;
+    margin-bottom: 2.5em;
+    margin-top: 1.5em;
+  }
+
+  .figure img {
+    width: 100%;
+  }
+
+  .figure .caption {
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 12px;
+    line-height: 1.5em;
+  }
+
+  .figure img.external {
+    background: white;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.1);
+    padding: 18px;
+    box-sizing: border-box;
+  }
+
+  .figure .caption a {
+    color: rgba(0, 0, 0, 0.6);
+  }
+
+  .figure .caption b,
+  .figure .caption strong, {
+    font-weight: 600;
+    color: rgba(0, 0, 0, 1.0);
+  }
+
+  /* Citations */
+
+  d-article .citation {
+    color: inherit;
+    cursor: inherit;
+  }
+
+  div.hanging-indent{
+    margin-left: 1em; text-indent: -1em;
+  }
+
+
+  /* Tweak 1000px media break to show more text */
+
+  @media(min-width: 1000px) {
+    .base-grid,
+    distill-header,
+    d-title,
+    d-abstract,
+    d-article,
+    d-appendix,
+    distill-appendix,
+    d-byline,
+    d-footnote-list,
+    d-citation-list,
+    distill-footer {
+      grid-template-columns: [screen-start] 1fr [page-start kicker-start] 80px [middle-start] 50px [text-start kicker-end] 65px 65px 65px 65px 65px 65px 65px 65px [text-end gutter-start] 65px [middle-end] 65px [page-end gutter-end] 1fr [screen-end];
+      grid-column-gap: 16px;
+    }
+
+    .grid {
+      grid-column-gap: 16px;
+    }
+
+    d-article {
+      font-size: 1.06rem;
+      line-height: 1.7em;
+    }
+    figure .caption, .figure .caption, figure figcaption {
+      font-size: 13px;
+    }
+  }
+
+  @media(min-width: 1180px) {
+    .base-grid,
+    distill-header,
+    d-title,
+    d-abstract,
+    d-article,
+    d-appendix,
+    distill-appendix,
+    d-byline,
+    d-footnote-list,
+    d-citation-list,
+    distill-footer {
+      grid-template-columns: [screen-start] 1fr [page-start kicker-start] 60px [middle-start] 60px [text-start kicker-end] 60px 60px 60px 60px 60px 60px 60px 60px [text-end gutter-start] 60px [middle-end] 60px [page-end gutter-end] 1fr [screen-end];
+      grid-column-gap: 32px;
+    }
+
+    .grid {
+      grid-column-gap: 32px;
+    }
+  }
+
+
+  /* Get the citation styles for the appendix (not auto-injected on render since
+     we do our own rendering of the citation appendix) */
+
+  d-appendix .citation-appendix,
+  .d-appendix .citation-appendix {
+    font-size: 11px;
+    line-height: 15px;
+    border-left: 1px solid rgba(0, 0, 0, 0.1);
+    padding-left: 18px;
+    border: 1px solid rgba(0,0,0,0.1);
+    background: rgba(0, 0, 0, 0.02);
+    padding: 10px 18px;
+    border-radius: 3px;
+    color: rgba(150, 150, 150, 1);
+    overflow: hidden;
+    margin-top: -12px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+  }
+
+  /* Include appendix styles here so they can be overridden */
+
+  d-appendix {
+    contain: layout style;
+    font-size: 0.8em;
+    line-height: 1.7em;
+    margin-top: 60px;
+    margin-bottom: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    color: rgba(0,0,0,0.5);
+    padding-top: 60px;
+    padding-bottom: 48px;
+  }
+
+  d-appendix h3 {
+    grid-column: page-start / text-start;
+    font-size: 15px;
+    font-weight: 500;
+    margin-top: 1em;
+    margin-bottom: 0;
+    color: rgba(0,0,0,0.65);
+  }
+
+  d-appendix h3 + * {
+    margin-top: 1em;
+  }
+
+  d-appendix ol {
+    padding: 0 0 0 15px;
+  }
+
+  @media (min-width: 768px) {
+    d-appendix ol {
+      padding: 0 0 0 30px;
+      margin-left: -30px;
+    }
+  }
+
+  d-appendix li {
+    margin-bottom: 1em;
+  }
+
+  d-appendix a {
+    color: rgba(0, 0, 0, 0.6);
+  }
+
+  d-appendix > * {
+    grid-column: text;
+  }
+
+  d-appendix > d-footnote-list,
+  d-appendix > d-citation-list,
+  d-appendix > distill-appendix {
+    grid-column: screen;
+  }
+
+  /* Include footnote styles here so they can be overridden */
+
+  d-footnote-list {
+    contain: layout style;
+  }
+
+  d-footnote-list > * {
+    grid-column: text;
+  }
+
+  d-footnote-list a.footnote-backlink {
+    color: rgba(0,0,0,0.3);
+    padding-left: 0.5em;
+  }
+
+
+
+  /* Anchor.js */
+
+  .anchorjs-link {
+    /*transition: all .25s linear; */
+    text-decoration: none;
+    border-bottom: none;
+  }
+  *:hover > .anchorjs-link {
+    margin-left: -1.125em !important;
+    text-decoration: none;
+    border-bottom: none;
+  }
+
+  /* Social footer */
+
+  .social_footer {
+    margin-top: 30px;
+    margin-bottom: 0;
+    color: rgba(0,0,0,0.67);
+  }
+
+  .disqus-comments {
+    margin-right: 30px;
+  }
+
+  .disqus-comment-count {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+  }
+
+  #disqus_thread {
+    margin-top: 30px;
+  }
+
+  .article-sharing a {
+    border-bottom: none;
+    margin-right: 8px;
+  }
+
+  .article-sharing a:hover {
+    border-bottom: none;
+  }
+
+  .sidebar-section.subscribe {
+    font-size: 12px;
+    line-height: 1.6em;
+  }
+
+  .subscribe p {
+    margin-bottom: 0.5em;
+  }
+
+
+  .article-footer .subscribe {
+    font-size: 15px;
+    margin-top: 45px;
+  }
+
+
+  .sidebar-section.custom {
+    font-size: 12px;
+    line-height: 1.6em;
+  }
+
+  .custom p {
+    margin-bottom: 0.5em;
+  }
+
+  /* Styles for listing layout (hide title) */
+  .layout-listing d-title, .layout-listing .d-title {
+    display: none;
+  }
+
+  /* Styles for posts lists (not auto-injected) */
+
+
+  .posts-with-sidebar {
+    padding-left: 45px;
+    padding-right: 45px;
+  }
+
+  .posts-list .description h2,
+  .posts-list .description p {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif;
+  }
+
+  .posts-list .description h2 {
+    font-weight: 700;
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+
+  .posts-list h2.post-tag {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    padding-bottom: 12px;
+  }
+  .posts-list {
+    margin-top: 60px;
+    margin-bottom: 24px;
+  }
+
+  .posts-list .post-preview {
+    text-decoration: none;
+    overflow: hidden;
+    display: block;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 24px 0;
+  }
+
+  .post-preview-last {
+    border-bottom: none !important;
+  }
+
+  .posts-list .posts-list-caption {
+    grid-column: screen;
+    font-weight: 400;
+  }
+
+  .posts-list .post-preview h2 {
+    margin: 0 0 6px 0;
+    line-height: 1.2em;
+    font-style: normal;
+    font-size: 24px;
+  }
+
+  .posts-list .post-preview p {
+    margin: 0 0 12px 0;
+    line-height: 1.4em;
+    font-size: 16px;
+  }
+
+  .posts-list .post-preview .thumbnail {
+    box-sizing: border-box;
+    margin-bottom: 24px;
+    position: relative;
+    max-width: 500px;
+  }
+  .posts-list .post-preview img {
+    width: 100%;
+    display: block;
+  }
+
+  .posts-list .metadata {
+    font-size: 12px;
+    line-height: 1.4em;
+    margin-bottom: 18px;
+  }
+
+  .posts-list .metadata > * {
+    display: inline-block;
+  }
+
+  .posts-list .metadata .publishedDate {
+    margin-right: 2em;
+  }
+
+  .posts-list .metadata .dt-authors {
+    display: block;
+    margin-top: 0.3em;
+    margin-right: 2em;
+  }
+
+  .posts-list .dt-tags {
+    display: block;
+    line-height: 1em;
+  }
+
+  .posts-list .dt-tags .dt-tag {
+    display: inline-block;
+    color: rgba(0,0,0,0.6);
+    padding: 0.3em 0.4em;
+    margin-right: 0.2em;
+    margin-bottom: 0.4em;
+    font-size: 60%;
+    border: 1px solid rgba(0,0,0,0.2);
+    border-radius: 3px;
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+
+  .posts-list img {
+    opacity: 1;
+  }
+
+  .posts-list img[data-src] {
+    opacity: 0;
+  }
+
+  .posts-more {
+    clear: both;
+  }
+
+
+  .posts-sidebar {
+    font-size: 16px;
+  }
+
+  .posts-sidebar h3 {
+    font-size: 16px;
+    margin-top: 0;
+    margin-bottom: 0.5em;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+
+  .sidebar-section {
+    margin-bottom: 30px;
+  }
+
+  .categories ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .categories li {
+    color: rgba(0, 0, 0, 0.8);
+    margin-bottom: 0;
+  }
+
+  .categories li>a {
+    border-bottom: none;
+  }
+
+  .categories li>a:hover {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+  }
+
+  .categories .active {
+    font-weight: 600;
+  }
+
+  .categories .category-count {
+    color: rgba(0, 0, 0, 0.4);
+  }
+
+
+  @media(min-width: 768px) {
+    .posts-list .post-preview h2 {
+      font-size: 26px;
+    }
+    .posts-list .post-preview .thumbnail {
+      float: right;
+      width: 30%;
+      margin-bottom: 0;
+    }
+    .posts-list .post-preview .description {
+      float: left;
+      width: 45%;
+    }
+    .posts-list .post-preview .metadata {
+      float: left;
+      width: 20%;
+      margin-top: 8px;
+    }
+    .posts-list .post-preview p {
+      margin: 0 0 12px 0;
+      line-height: 1.5em;
+      font-size: 16px;
+    }
+    .posts-with-sidebar .posts-list {
+      float: left;
+      width: 75%;
+    }
+    .posts-with-sidebar .posts-sidebar {
+      float: right;
+      width: 20%;
+      margin-top: 60px;
+      padding-top: 24px;
+      padding-bottom: 24px;
+    }
+  }
+
+
+  /* Improve display for browsers without grid (IE/Edge <= 15) */
+
+  .downlevel {
+    line-height: 1.6em;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif;
+    margin: 0;
+  }
+
+  .downlevel .d-title {
+    padding-top: 6rem;
+    padding-bottom: 1.5rem;
+  }
+
+  .downlevel .d-title h1 {
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 1.1em;
+    margin: 0 0 0.5rem;
+  }
+
+  .downlevel .d-title p {
+    font-weight: 300;
+    font-size: 1.2rem;
+    line-height: 1.55em;
+    margin-top: 0;
+  }
+
+  .downlevel .d-byline {
+    padding-top: 0.8em;
+    padding-bottom: 0.8em;
+    font-size: 0.8rem;
+    line-height: 1.8em;
+  }
+
+  .downlevel .section-separator {
+    border: none;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  .downlevel .d-article {
+    font-size: 1.06rem;
+    line-height: 1.7em;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+  }
+
+
+  .downlevel .d-appendix {
+    padding-left: 0;
+    padding-right: 0;
+    max-width: none;
+    font-size: 0.8em;
+    line-height: 1.7em;
+    margin-bottom: 0;
+    color: rgba(0,0,0,0.5);
+    padding-top: 40px;
+    padding-bottom: 48px;
+  }
+
+  .downlevel .footnotes ol {
+    padding-left: 13px;
+  }
+
+  .downlevel .base-grid,
+  .downlevel .distill-header,
+  .downlevel .d-title,
+  .downlevel .d-abstract,
+  .downlevel .d-article,
+  .downlevel .d-appendix,
+  .downlevel .distill-appendix,
+  .downlevel .d-byline,
+  .downlevel .d-footnote-list,
+  .downlevel .d-citation-list,
+  .downlevel .distill-footer,
+  .downlevel .appendix-bottom,
+  .downlevel .posts-container {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  @media(min-width: 768px) {
+    .downlevel .base-grid,
+    .downlevel .distill-header,
+    .downlevel .d-title,
+    .downlevel .d-abstract,
+    .downlevel .d-article,
+    .downlevel .d-appendix,
+    .downlevel .distill-appendix,
+    .downlevel .d-byline,
+    .downlevel .d-footnote-list,
+    .downlevel .d-citation-list,
+    .downlevel .distill-footer,
+    .downlevel .appendix-bottom,
+    .downlevel .posts-container {
+    padding-left: 150px;
+    padding-right: 150px;
+    max-width: 900px;
+  }
+  }
+
+  .downlevel pre code {
+    display: block;
+    border-left: 2px solid rgba(0, 0, 0, .1);
+    padding: 0 0 0 20px;
+    font-size: 14px;
+  }
+
+  .downlevel code, .downlevel pre {
+    color: black;
+    background: none;
+    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+    text-align: left;
+    white-space: pre;
+    word-spacing: normal;
+    word-break: normal;
+    word-wrap: normal;
+    line-height: 1.5;
+
+    -moz-tab-size: 4;
+    -o-tab-size: 4;
+    tab-size: 4;
+
+    -webkit-hyphens: none;
+    -moz-hyphens: none;
+    -ms-hyphens: none;
+    hyphens: none;
+  }
+
+  .downlevel .posts-list .post-preview {
+    color: inherit;
+  }
+
+
+
+  </style>
+
+  <script type="application/javascript">
+
+  function is_downlevel_browser() {
+    if (bowser.isUnsupportedBrowser({ msie: "12", msedge: "16"},
+                                   window.navigator.userAgent)) {
+      return true;
+    } else {
+      return window.load_distill_framework === undefined;
+    }
+  }
+
+  // show body when load is complete
+  function on_load_complete() {
+
+    // add anchors
+    if (window.anchors) {
+      window.anchors.options.placement = 'left';
+      window.anchors.add('d-article > h2, d-article > h3, d-article > h4, d-article > h5');
+    }
+
+
+    // set body to visible
+    document.body.style.visibility = 'visible';
+
+    // force redraw for leaflet widgets
+    if (window.HTMLWidgets) {
+      var maps = window.HTMLWidgets.findAll(".leaflet");
+      $.each(maps, function(i, el) {
+        var map = this.getMap();
+        map.invalidateSize();
+        map.eachLayer(function(layer) {
+          if (layer instanceof L.TileLayer)
+            layer.redraw();
+        });
+      });
+    }
+
+    // trigger 'shown' so htmlwidgets resize
+    $('d-article').trigger('shown');
+  }
+
+  function init_distill() {
+
+    init_common();
+
+    // create front matter
+    var front_matter = $('<d-front-matter></d-front-matter>');
+    $('#distill-front-matter').wrap(front_matter);
+
+    // create d-title
+    $('.d-title').changeElementType('d-title');
+
+    // create d-byline
+    var byline = $('<d-byline></d-byline>');
+    $('.d-byline').replaceWith(byline);
+
+    // create d-article
+    var article = $('<d-article></d-article>');
+    $('.d-article').wrap(article).children().unwrap();
+
+    // move posts container into article
+    $('.posts-container').appendTo($('d-article'));
+
+    // create d-appendix
+    $('.d-appendix').changeElementType('d-appendix');
+
+    // flag indicating that we have appendix items
+    var appendix = $('.appendix-bottom').children('h3').length > 0;
+
+    // replace footnotes with <d-footnote>
+    $('.footnote-ref').each(function(i, val) {
+      appendix = true;
+      var href = $(this).attr('href');
+      var id = href.replace('#', '');
+      var fn = $('#' + id);
+      var fn_p = $('#' + id + '>p');
+      fn_p.find('.footnote-back').remove();
+      var text = fn_p.html();
+      var dtfn = $('<d-footnote></d-footnote>');
+      dtfn.html(text);
+      $(this).replaceWith(dtfn);
+    });
+    // remove footnotes
+    $('.footnotes').remove();
+
+    // move refs into #references-listing
+    $('#references-listing').replaceWith($('#refs'));
+
+    $('h1.appendix, h2.appendix').each(function(i, val) {
+      $(this).changeElementType('h3');
+    });
+    $('h3.appendix').each(function(i, val) {
+      var id = $(this).attr('id');
+      $('.d-contents a[href="#' + id + '"]').parent().remove();
+      appendix = true;
+      $(this).nextUntil($('h1, h2, h3')).addBack().appendTo($('d-appendix'));
+    });
+
+    // show d-appendix if we have appendix content
+    $("d-appendix").css('display', appendix ? 'grid' : 'none');
+
+    // localize layout chunks to just output
+    $('.layout-chunk').each(function(i, val) {
+
+      // capture layout
+      var layout = $(this).attr('data-layout');
+
+      // apply layout to markdown level block elements
+      var elements = $(this).children().not('div.sourceCode, pre, script');
+      elements.each(function(i, el) {
+        var layout_div = $('<div class="' + layout + '"></div>');
+        if (layout_div.hasClass('shaded')) {
+          var shaded_content = $('<div class="shaded-content"></div>');
+          $(this).wrap(shaded_content);
+          $(this).parent().wrap(layout_div);
+        } else {
+          $(this).wrap(layout_div);
+        }
+      });
+
+
+      // unwrap the layout-chunk div
+      $(this).children().unwrap();
+    });
+
+    // remove code block used to force  highlighting css
+    $('.distill-force-highlighting-css').parent().remove();
+
+    // remove empty line numbers inserted by pandoc when using a
+    // custom syntax highlighting theme
+    $('code.sourceCode a:empty').remove();
+
+    // load distill framework
+    load_distill_framework();
+
+    // wait for window.distillRunlevel == 4 to do post processing
+    function distill_post_process() {
+
+      if (!window.distillRunlevel || window.distillRunlevel < 4)
+        return;
+
+      // hide author/affiliations entirely if we have no authors
+      var front_matter = JSON.parse($("#distill-front-matter").html());
+      var have_authors = front_matter.authors && front_matter.authors.length > 0;
+      if (!have_authors)
+        $('d-byline').addClass('hidden');
+
+      // article with toc class
+      $('.d-contents').parent().addClass('d-article-with-toc');
+
+      // strip links that point to #
+      $('.authors-affiliations').find('a[href="#"]').removeAttr('href');
+
+      // add orcid ids
+      $('.authors-affiliations').find('.author').each(function(i, el) {
+        var orcid_id = front_matter.authors[i].orcidID;
+        if (orcid_id) {
+          var a = $('<a></a>');
+          a.attr('href', 'https://orcid.org/' + orcid_id);
+          var img = $('<img></img>');
+          img.addClass('orcid-id');
+          img.attr('alt', 'ORCID ID');
+          img.attr('src','data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg==');
+          a.append(img);
+          $(this).append(a);
+        }
+      });
+
+      // hide elements of author/affiliations grid that have no value
+      function hide_byline_column(caption) {
+        $('d-byline').find('h3:contains("' + caption + '")').parent().css('visibility', 'hidden');
+      }
+
+      // affiliations
+      var have_affiliations = false;
+      for (var i = 0; i<front_matter.authors.length; ++i) {
+        var author = front_matter.authors[i];
+        if (author.affiliation !== "&nbsp;") {
+          have_affiliations = true;
+          break;
+        }
+      }
+      if (!have_affiliations)
+        $('d-byline').find('h3:contains("Affiliations")').css('visibility', 'hidden');
+
+      // published date
+      if (!front_matter.publishedDate)
+        hide_byline_column("Published");
+
+      // document object identifier
+      var doi = $('d-byline').find('h3:contains("DOI")');
+      var doi_p = doi.next().empty();
+      if (!front_matter.doi) {
+        // if we have a citation and valid citationText then link to that
+        if ($('#citation').length > 0 && front_matter.citationText) {
+          doi.html('Citation');
+          $('<a href="#citation"></a>')
+            .text(front_matter.citationText)
+            .appendTo(doi_p);
+        } else {
+          hide_byline_column("DOI");
+        }
+      } else {
+        $('<a></a>')
+           .attr('href', "https://doi.org/" + front_matter.doi)
+           .html(front_matter.doi)
+           .appendTo(doi_p);
+      }
+
+       // change plural form of authors/affiliations
+      if (front_matter.authors.length === 1) {
+        var grid = $('.authors-affiliations');
+        grid.children('h3:contains("Authors")').text('Author');
+        grid.children('h3:contains("Affiliations")').text('Affiliation');
+      }
+
+      // remove d-appendix and d-footnote-list local styles
+      $('d-appendix > style:first-child').remove();
+      $('d-footnote-list > style:first-child').remove();
+
+      // move appendix-bottom entries to the bottom
+      $('.appendix-bottom').appendTo('d-appendix').children().unwrap();
+      $('.appendix-bottom').remove();
+
+      // clear polling timer
+      clearInterval(tid);
+
+      // show body now that everything is ready
+      on_load_complete();
+    }
+
+    var tid = setInterval(distill_post_process, 50);
+    distill_post_process();
+
+  }
+
+  function init_downlevel() {
+
+    init_common();
+
+     // insert hr after d-title
+    $('.d-title').after($('<hr class="section-separator"/>'));
+
+    // check if we have authors
+    var front_matter = JSON.parse($("#distill-front-matter").html());
+    var have_authors = front_matter.authors && front_matter.authors.length > 0;
+
+    // manage byline/border
+    if (!have_authors)
+      $('.d-byline').remove();
+    $('.d-byline').after($('<hr class="section-separator"/>'));
+    $('.d-byline a').remove();
+
+    // remove toc
+    $('.d-contents').remove();
+
+    // move appendix elements
+    $('h1.appendix, h2.appendix').each(function(i, val) {
+      $(this).changeElementType('h3');
+    });
+    $('h3.appendix').each(function(i, val) {
+      $(this).nextUntil($('h1, h2, h3')).addBack().appendTo($('.d-appendix'));
+    });
+
+
+    // inject headers into references and footnotes
+    var refs_header = $('<h3></h3>');
+    refs_header.text('References');
+    $('#refs').prepend(refs_header);
+
+    var footnotes_header = $('<h3></h3');
+    footnotes_header.text('Footnotes');
+    $('.footnotes').children('hr').first().replaceWith(footnotes_header);
+
+    // move appendix-bottom entries to the bottom
+    $('.appendix-bottom').appendTo('.d-appendix').children().unwrap();
+    $('.appendix-bottom').remove();
+
+    // remove appendix if it's empty
+    if ($('.d-appendix').children().length === 0)
+      $('.d-appendix').remove();
+
+    // prepend separator above appendix
+    $('.d-appendix').before($('<hr class="section-separator" style="clear: both"/>'));
+
+    // trim code
+    $('pre>code').each(function(i, val) {
+      $(this).html($.trim($(this).html()));
+    });
+
+    // move posts-container right before article
+    $('.posts-container').insertBefore($('.d-article'));
+
+    $('body').addClass('downlevel');
+
+    on_load_complete();
+  }
+
+
+  function init_common() {
+
+    // jquery plugin to change element types
+    (function($) {
+      $.fn.changeElementType = function(newType) {
+        var attrs = {};
+
+        $.each(this[0].attributes, function(idx, attr) {
+          attrs[attr.nodeName] = attr.nodeValue;
+        });
+
+        this.replaceWith(function() {
+          return $("<" + newType + "/>", attrs).append($(this).contents());
+        });
+      };
+    })(jQuery);
+
+    // prevent underline for linked images
+    $('a > img').parent().css({'border-bottom' : 'none'});
+
+    // mark non-body figures created by knitr chunks as 100% width
+    $('.layout-chunk').each(function(i, val) {
+      var figures = $(this).find('img, .html-widget');
+      if ($(this).attr('data-layout') !== "l-body") {
+        figures.css('width', '100%');
+      } else {
+        figures.css('max-width', '100%');
+        figures.filter("[width]").each(function(i, val) {
+          var fig = $(this);
+          fig.css('width', fig.attr('width') + 'px');
+        });
+
+      }
+    });
+
+    // auto-append index.html to post-preview links in file: protocol
+    // and in rstudio ide preview
+    $('.post-preview').each(function(i, val) {
+      if (window.location.protocol === "file:")
+        $(this).attr('href', $(this).attr('href') + "index.html");
+    });
+
+    // get rid of index.html references in header
+    if (window.location.protocol !== "file:") {
+      $('.distill-site-header a[href]').each(function(i,val) {
+        $(this).attr('href', $(this).attr('href').replace("index.html", "./"));
+      });
+    }
+
+    // add class to pandoc style tables
+    $('tr.header').parent('thead').parent('table').addClass('pandoc-table');
+    $('.kable-table').children('table').addClass('pandoc-table');
+
+    // add figcaption style to table captions
+    $('caption').parent('table').addClass("figcaption");
+
+    // initialize posts list
+    if (window.init_posts_list)
+      window.init_posts_list();
+
+    // implmement disqus comment link
+    $('.disqus-comment-count').click(function() {
+      window.headroom_prevent_pin = true;
+      $('#disqus_thread').toggleClass('hidden');
+      if (!$('#disqus_thread').hasClass('hidden')) {
+        var offset = $(this).offset();
+        $(window).resize();
+        $('html, body').animate({
+          scrollTop: offset.top - 35
+        });
+      }
+    });
+  }
+
+  document.addEventListener('DOMContentLoaded', function() {
+    if (is_downlevel_browser())
+      init_downlevel();
+    else
+      window.addEventListener('WebComponentsReady', init_distill);
+  });
+
+  </script>
+
+  <!--/radix_placeholder_distill-->
+  <script src="teste_files/header-attrs-2.5/header-attrs.js"></script>
+  <link href="teste_files/pagedtable-1.1/css/pagedtable.css" rel="stylesheet" />
+  <script src="teste_files/pagedtable-1.1/js/pagedtable.js"></script>
+  <script src="teste_files/jquery-1.11.3/jquery.min.js"></script>
+  <script src="teste_files/anchor-4.2.2/anchor.min.js"></script>
+  <script src="teste_files/bowser-1.9.3/bowser.min.js"></script>
+  <script src="teste_files/webcomponents-2.0.0/webcomponents.js"></script>
+  <script src="teste_files/distill-2.2.21/template.v2.js"></script>
+  <!--radix_placeholder_site_in_header-->
+  <!--/radix_placeholder_site_in_header-->
+
+
+</head>
+
+<body>
+
+<!--radix_placeholder_front_matter-->
+
+<script id="distill-front-matter" type="text/json">
+{"title":"teste","description":"A short description of the post.","authors":[{"author":"Lucas Moraes","authorURL":"https://lucasmoraes.io","affiliation":"&nbsp;","affiliationURL":"#","orcidID":""}],"publishedDate":"2020-12-10T00:00:00.000-03:00","citationText":"Moraes, 2020"}
+</script>
+
+<!--/radix_placeholder_front_matter-->
+<!--radix_placeholder_navigation_before_body-->
+<!--/radix_placeholder_navigation_before_body-->
+<!--radix_placeholder_site_before_body-->
+<!--/radix_placeholder_site_before_body-->
+
+<div class="d-title">
+<h1>teste</h1>
+<!--radix_placeholder_categories-->
+<!--/radix_placeholder_categories-->
+<p><p>A short description of the post.</p></p>
+</div>
+
+<div class="d-byline">
+  Lucas Moraes <a href="https://lucasmoraes.io" class="uri">https://lucasmoraes.io</a> 
+  
+<br/>12-10-2020
+</div>
+
+<div class="d-article">
+<p>Pequeno estudo de caso fazendo uso de modelos de regressão linear simples bivariada.</p>
+<p>Para fazer essa análise, vou usar o dataset <a href="https://www.kaggle.com/aungpyaeap/fish-market"><code>Fish</code></a> quem contém diferentes medidas de peixes registrados em um mercado.</p>
+<p>Meu objetivo aqui vai ser escolher uma variável de resposta e a melhor variável que explique seu comportamento.</p>
+<p>Primeiro vou dar uma olhada no dataset, já carregando alguns pacotes que vou utilizar:</p>
+<div class="layout-chunk" data-layout="l-body">
+<div data-pagedtable="false">
+<script data-pagedtable-source type="application/json">
+{"columns":[{"label":["Species"],"name":[1],"type":["chr"],"align":["left"]},{"label":["Weight"],"name":[2],"type":["dbl"],"align":["right"]},{"label":["Length1"],"name":[3],"type":["dbl"],"align":["right"]},{"label":["Length2"],"name":[4],"type":["dbl"],"align":["right"]},{"label":["Length3"],"name":[5],"type":["dbl"],"align":["right"]},{"label":["Height"],"name":[6],"type":["dbl"],"align":["right"]},{"label":["Width"],"name":[7],"type":["dbl"],"align":["right"]}],"data":[{"1":"Bream","2":"242.0","3":"23.2","4":"25.4","5":"30.0","6":"11.5200","7":"4.0200"},{"1":"Bream","2":"290.0","3":"24.0","4":"26.3","5":"31.2","6":"12.4800","7":"4.3056"},{"1":"Bream","2":"340.0","3":"23.9","4":"26.5","5":"31.1","6":"12.3778","7":"4.6961"},{"1":"Bream","2":"363.0","3":"26.3","4":"29.0","5":"33.5","6":"12.7300","7":"4.4555"},{"1":"Bream","2":"430.0","3":"26.5","4":"29.0","5":"34.0","6":"12.4440","7":"5.1340"},{"1":"Bream","2":"450.0","3":"26.8","4":"29.7","5":"34.7","6":"13.6024","7":"4.9274"},{"1":"Bream","2":"500.0","3":"26.8","4":"29.7","5":"34.5","6":"14.1795","7":"5.2785"},{"1":"Bream","2":"390.0","3":"27.6","4":"30.0","5":"35.0","6":"12.6700","7":"4.6900"},{"1":"Bream","2":"450.0","3":"27.6","4":"30.0","5":"35.1","6":"14.0049","7":"4.8438"},{"1":"Bream","2":"500.0","3":"28.5","4":"30.7","5":"36.2","6":"14.2266","7":"4.9594"},{"1":"Bream","2":"475.0","3":"28.4","4":"31.0","5":"36.2","6":"14.2628","7":"5.1042"},{"1":"Bream","2":"500.0","3":"28.7","4":"31.0","5":"36.2","6":"14.3714","7":"4.8146"},{"1":"Bream","2":"500.0","3":"29.1","4":"31.5","5":"36.4","6":"13.7592","7":"4.3680"},{"1":"Bream","2":"340.0","3":"29.5","4":"32.0","5":"37.3","6":"13.9129","7":"5.0728"},{"1":"Bream","2":"600.0","3":"29.4","4":"32.0","5":"37.2","6":"14.9544","7":"5.1708"},{"1":"Bream","2":"600.0","3":"29.4","4":"32.0","5":"37.2","6":"15.4380","7":"5.5800"},{"1":"Bream","2":"700.0","3":"30.4","4":"33.0","5":"38.3","6":"14.8604","7":"5.2854"},{"1":"Bream","2":"700.0","3":"30.4","4":"33.0","5":"38.5","6":"14.9380","7":"5.1975"},{"1":"Bream","2":"610.0","3":"30.9","4":"33.5","5":"38.6","6":"15.6330","7":"5.1338"},{"1":"Bream","2":"650.0","3":"31.0","4":"33.5","5":"38.7","6":"14.4738","7":"5.7276"},{"1":"Bream","2":"575.0","3":"31.3","4":"34.0","5":"39.5","6":"15.1285","7":"5.5695"},{"1":"Bream","2":"685.0","3":"31.4","4":"34.0","5":"39.2","6":"15.9936","7":"5.3704"},{"1":"Bream","2":"620.0","3":"31.5","4":"34.5","5":"39.7","6":"15.5227","7":"5.2801"},{"1":"Bream","2":"680.0","3":"31.8","4":"35.0","5":"40.6","6":"15.4686","7":"6.1306"},{"1":"Bream","2":"700.0","3":"31.9","4":"35.0","5":"40.5","6":"16.2405","7":"5.5890"},{"1":"Bream","2":"725.0","3":"31.8","4":"35.0","5":"40.9","6":"16.3600","7":"6.0532"},{"1":"Bream","2":"720.0","3":"32.0","4":"35.0","5":"40.6","6":"16.3618","7":"6.0900"},{"1":"Bream","2":"714.0","3":"32.7","4":"36.0","5":"41.5","6":"16.5170","7":"5.8515"},{"1":"Bream","2":"850.0","3":"32.8","4":"36.0","5":"41.6","6":"16.8896","7":"6.1984"},{"1":"Bream","2":"1000.0","3":"33.5","4":"37.0","5":"42.6","6":"18.9570","7":"6.6030"},{"1":"Bream","2":"920.0","3":"35.0","4":"38.5","5":"44.1","6":"18.0369","7":"6.3063"},{"1":"Bream","2":"955.0","3":"35.0","4":"38.5","5":"44.0","6":"18.0840","7":"6.2920"},{"1":"Bream","2":"925.0","3":"36.2","4":"39.5","5":"45.3","6":"18.7542","7":"6.7497"},{"1":"Bream","2":"975.0","3":"37.4","4":"41.0","5":"45.9","6":"18.6354","7":"6.7473"},{"1":"Bream","2":"950.0","3":"38.0","4":"41.0","5":"46.5","6":"17.6235","7":"6.3705"},{"1":"Roach","2":"40.0","3":"12.9","4":"14.1","5":"16.2","6":"4.1472","7":"2.2680"},{"1":"Roach","2":"69.0","3":"16.5","4":"18.2","5":"20.3","6":"5.2983","7":"2.8217"},{"1":"Roach","2":"78.0","3":"17.5","4":"18.8","5":"21.2","6":"5.5756","7":"2.9044"},{"1":"Roach","2":"87.0","3":"18.2","4":"19.8","5":"22.2","6":"5.6166","7":"3.1746"},{"1":"Roach","2":"120.0","3":"18.6","4":"20.0","5":"22.2","6":"6.2160","7":"3.5742"},{"1":"Roach","2":"0.0","3":"19.0","4":"20.5","5":"22.8","6":"6.4752","7":"3.3516"},{"1":"Roach","2":"110.0","3":"19.1","4":"20.8","5":"23.1","6":"6.1677","7":"3.3957"},{"1":"Roach","2":"120.0","3":"19.4","4":"21.0","5":"23.7","6":"6.1146","7":"3.2943"},{"1":"Roach","2":"150.0","3":"20.4","4":"22.0","5":"24.7","6":"5.8045","7":"3.7544"},{"1":"Roach","2":"145.0","3":"20.5","4":"22.0","5":"24.3","6":"6.6339","7":"3.5478"},{"1":"Roach","2":"160.0","3":"20.5","4":"22.5","5":"25.3","6":"7.0334","7":"3.8203"},{"1":"Roach","2":"140.0","3":"21.0","4":"22.5","5":"25.0","6":"6.5500","7":"3.3250"},{"1":"Roach","2":"160.0","3":"21.1","4":"22.5","5":"25.0","6":"6.4000","7":"3.8000"},{"1":"Roach","2":"169.0","3":"22.0","4":"24.0","5":"27.2","6":"7.5344","7":"3.8352"},{"1":"Roach","2":"161.0","3":"22.0","4":"23.4","5":"26.7","6":"6.9153","7":"3.6312"},{"1":"Roach","2":"200.0","3":"22.1","4":"23.5","5":"26.8","6":"7.3968","7":"4.1272"},{"1":"Roach","2":"180.0","3":"23.6","4":"25.2","5":"27.9","6":"7.0866","7":"3.9060"},{"1":"Roach","2":"290.0","3":"24.0","4":"26.0","5":"29.2","6":"8.8768","7":"4.4968"},{"1":"Roach","2":"272.0","3":"25.0","4":"27.0","5":"30.6","6":"8.5680","7":"4.7736"},{"1":"Roach","2":"390.0","3":"29.5","4":"31.7","5":"35.0","6":"9.4850","7":"5.3550"},{"1":"Whitefish","2":"270.0","3":"23.6","4":"26.0","5":"28.7","6":"8.3804","7":"4.2476"},{"1":"Whitefish","2":"270.0","3":"24.1","4":"26.5","5":"29.3","6":"8.1454","7":"4.2485"},{"1":"Whitefish","2":"306.0","3":"25.6","4":"28.0","5":"30.8","6":"8.7780","7":"4.6816"},{"1":"Whitefish","2":"540.0","3":"28.5","4":"31.0","5":"34.0","6":"10.7440","7":"6.5620"},{"1":"Whitefish","2":"800.0","3":"33.7","4":"36.4","5":"39.6","6":"11.7612","7":"6.5736"},{"1":"Whitefish","2":"1000.0","3":"37.3","4":"40.0","5":"43.5","6":"12.3540","7":"6.5250"},{"1":"Parkki","2":"55.0","3":"13.5","4":"14.7","5":"16.5","6":"6.8475","7":"2.3265"},{"1":"Parkki","2":"60.0","3":"14.3","4":"15.5","5":"17.4","6":"6.5772","7":"2.3142"},{"1":"Parkki","2":"90.0","3":"16.3","4":"17.7","5":"19.8","6":"7.4052","7":"2.6730"},{"1":"Parkki","2":"120.0","3":"17.5","4":"19.0","5":"21.3","6":"8.3922","7":"2.9181"},{"1":"Parkki","2":"150.0","3":"18.4","4":"20.0","5":"22.4","6":"8.8928","7":"3.2928"},{"1":"Parkki","2":"140.0","3":"19.0","4":"20.7","5":"23.2","6":"8.5376","7":"3.2944"},{"1":"Parkki","2":"170.0","3":"19.0","4":"20.7","5":"23.2","6":"9.3960","7":"3.4104"},{"1":"Parkki","2":"145.0","3":"19.8","4":"21.5","5":"24.1","6":"9.7364","7":"3.1571"},{"1":"Parkki","2":"200.0","3":"21.2","4":"23.0","5":"25.8","6":"10.3458","7":"3.6636"},{"1":"Parkki","2":"273.0","3":"23.0","4":"25.0","5":"28.0","6":"11.0880","7":"4.1440"},{"1":"Parkki","2":"300.0","3":"24.0","4":"26.0","5":"29.0","6":"11.3680","7":"4.2340"},{"1":"Perch","2":"5.9","3":"7.5","4":"8.4","5":"8.8","6":"2.1120","7":"1.4080"},{"1":"Perch","2":"32.0","3":"12.5","4":"13.7","5":"14.7","6":"3.5280","7":"1.9992"},{"1":"Perch","2":"40.0","3":"13.8","4":"15.0","5":"16.0","6":"3.8240","7":"2.4320"},{"1":"Perch","2":"51.5","3":"15.0","4":"16.2","5":"17.2","6":"4.5924","7":"2.6316"},{"1":"Perch","2":"70.0","3":"15.7","4":"17.4","5":"18.5","6":"4.5880","7":"2.9415"},{"1":"Perch","2":"100.0","3":"16.2","4":"18.0","5":"19.2","6":"5.2224","7":"3.3216"},{"1":"Perch","2":"78.0","3":"16.8","4":"18.7","5":"19.4","6":"5.1992","7":"3.1234"},{"1":"Perch","2":"80.0","3":"17.2","4":"19.0","5":"20.2","6":"5.6358","7":"3.0502"},{"1":"Perch","2":"85.0","3":"17.8","4":"19.6","5":"20.8","6":"5.1376","7":"3.0368"},{"1":"Perch","2":"85.0","3":"18.2","4":"20.0","5":"21.0","6":"5.0820","7":"2.7720"},{"1":"Perch","2":"110.0","3":"19.0","4":"21.0","5":"22.5","6":"5.6925","7":"3.5550"},{"1":"Perch","2":"115.0","3":"19.0","4":"21.0","5":"22.5","6":"5.9175","7":"3.3075"},{"1":"Perch","2":"125.0","3":"19.0","4":"21.0","5":"22.5","6":"5.6925","7":"3.6675"},{"1":"Perch","2":"130.0","3":"19.3","4":"21.3","5":"22.8","6":"6.3840","7":"3.5340"},{"1":"Perch","2":"120.0","3":"20.0","4":"22.0","5":"23.5","6":"6.1100","7":"3.4075"},{"1":"Perch","2":"120.0","3":"20.0","4":"22.0","5":"23.5","6":"5.6400","7":"3.5250"},{"1":"Perch","2":"130.0","3":"20.0","4":"22.0","5":"23.5","6":"6.1100","7":"3.5250"},{"1":"Perch","2":"135.0","3":"20.0","4":"22.0","5":"23.5","6":"5.8750","7":"3.5250"},{"1":"Perch","2":"110.0","3":"20.0","4":"22.0","5":"23.5","6":"5.5225","7":"3.9950"},{"1":"Perch","2":"130.0","3":"20.5","4":"22.5","5":"24.0","6":"5.8560","7":"3.6240"},{"1":"Perch","2":"150.0","3":"20.5","4":"22.5","5":"24.0","6":"6.7920","7":"3.6240"},{"1":"Perch","2":"145.0","3":"20.7","4":"22.7","5":"24.2","6":"5.9532","7":"3.6300"},{"1":"Perch","2":"150.0","3":"21.0","4":"23.0","5":"24.5","6":"5.2185","7":"3.6260"},{"1":"Perch","2":"170.0","3":"21.5","4":"23.5","5":"25.0","6":"6.2750","7":"3.7250"},{"1":"Perch","2":"225.0","3":"22.0","4":"24.0","5":"25.5","6":"7.2930","7":"3.7230"},{"1":"Perch","2":"145.0","3":"22.0","4":"24.0","5":"25.5","6":"6.3750","7":"3.8250"},{"1":"Perch","2":"188.0","3":"22.6","4":"24.6","5":"26.2","6":"6.7334","7":"4.1658"},{"1":"Perch","2":"180.0","3":"23.0","4":"25.0","5":"26.5","6":"6.4395","7":"3.6835"},{"1":"Perch","2":"197.0","3":"23.5","4":"25.6","5":"27.0","6":"6.5610","7":"4.2390"},{"1":"Perch","2":"218.0","3":"25.0","4":"26.5","5":"28.0","6":"7.1680","7":"4.1440"},{"1":"Perch","2":"300.0","3":"25.2","4":"27.3","5":"28.7","6":"8.3230","7":"5.1373"},{"1":"Perch","2":"260.0","3":"25.4","4":"27.5","5":"28.9","6":"7.1672","7":"4.3350"},{"1":"Perch","2":"265.0","3":"25.4","4":"27.5","5":"28.9","6":"7.0516","7":"4.3350"},{"1":"Perch","2":"250.0","3":"25.4","4":"27.5","5":"28.9","6":"7.2828","7":"4.5662"},{"1":"Perch","2":"250.0","3":"25.9","4":"28.0","5":"29.4","6":"7.8204","7":"4.2042"},{"1":"Perch","2":"300.0","3":"26.9","4":"28.7","5":"30.1","6":"7.5852","7":"4.6354"},{"1":"Perch","2":"320.0","3":"27.8","4":"30.0","5":"31.6","6":"7.6156","7":"4.7716"},{"1":"Perch","2":"514.0","3":"30.5","4":"32.8","5":"34.0","6":"10.0300","7":"6.0180"},{"1":"Perch","2":"556.0","3":"32.0","4":"34.5","5":"36.5","6":"10.2565","7":"6.3875"},{"1":"Perch","2":"840.0","3":"32.5","4":"35.0","5":"37.3","6":"11.4884","7":"7.7957"},{"1":"Perch","2":"685.0","3":"34.0","4":"36.5","5":"39.0","6":"10.8810","7":"6.8640"},{"1":"Perch","2":"700.0","3":"34.0","4":"36.0","5":"38.3","6":"10.6091","7":"6.7408"},{"1":"Perch","2":"700.0","3":"34.5","4":"37.0","5":"39.4","6":"10.8350","7":"6.2646"},{"1":"Perch","2":"690.0","3":"34.6","4":"37.0","5":"39.3","6":"10.5717","7":"6.3666"},{"1":"Perch","2":"900.0","3":"36.5","4":"39.0","5":"41.4","6":"11.1366","7":"7.4934"},{"1":"Perch","2":"650.0","3":"36.5","4":"39.0","5":"41.4","6":"11.1366","7":"6.0030"},{"1":"Perch","2":"820.0","3":"36.6","4":"39.0","5":"41.3","6":"12.4313","7":"7.3514"},{"1":"Perch","2":"850.0","3":"36.9","4":"40.0","5":"42.3","6":"11.9286","7":"7.1064"},{"1":"Perch","2":"900.0","3":"37.0","4":"40.0","5":"42.5","6":"11.7300","7":"7.2250"},{"1":"Perch","2":"1015.0","3":"37.0","4":"40.0","5":"42.4","6":"12.3808","7":"7.4624"},{"1":"Perch","2":"820.0","3":"37.1","4":"40.0","5":"42.5","6":"11.1350","7":"6.6300"},{"1":"Perch","2":"1100.0","3":"39.0","4":"42.0","5":"44.6","6":"12.8002","7":"6.8684"},{"1":"Perch","2":"1000.0","3":"39.8","4":"43.0","5":"45.2","6":"11.9328","7":"7.2772"},{"1":"Perch","2":"1100.0","3":"40.1","4":"43.0","5":"45.5","6":"12.5125","7":"7.4165"},{"1":"Perch","2":"1000.0","3":"40.2","4":"43.5","5":"46.0","6":"12.6040","7":"8.1420"},{"1":"Perch","2":"1000.0","3":"41.1","4":"44.0","5":"46.6","6":"12.4888","7":"7.5958"},{"1":"Pike","2":"200.0","3":"30.0","4":"32.3","5":"34.8","6":"5.5680","7":"3.3756"},{"1":"Pike","2":"300.0","3":"31.7","4":"34.0","5":"37.8","6":"5.7078","7":"4.1580"},{"1":"Pike","2":"300.0","3":"32.7","4":"35.0","5":"38.8","6":"5.9364","7":"4.3844"},{"1":"Pike","2":"300.0","3":"34.8","4":"37.3","5":"39.8","6":"6.2884","7":"4.0198"},{"1":"Pike","2":"430.0","3":"35.5","4":"38.0","5":"40.5","6":"7.2900","7":"4.5765"},{"1":"Pike","2":"345.0","3":"36.0","4":"38.5","5":"41.0","6":"6.3960","7":"3.9770"},{"1":"Pike","2":"456.0","3":"40.0","4":"42.5","5":"45.5","6":"7.2800","7":"4.3225"},{"1":"Pike","2":"510.0","3":"40.0","4":"42.5","5":"45.5","6":"6.8250","7":"4.4590"},{"1":"Pike","2":"540.0","3":"40.1","4":"43.0","5":"45.8","6":"7.7860","7":"5.1296"},{"1":"Pike","2":"500.0","3":"42.0","4":"45.0","5":"48.0","6":"6.9600","7":"4.8960"},{"1":"Pike","2":"567.0","3":"43.2","4":"46.0","5":"48.7","6":"7.7920","7":"4.8700"},{"1":"Pike","2":"770.0","3":"44.8","4":"48.0","5":"51.2","6":"7.6800","7":"5.3760"},{"1":"Pike","2":"950.0","3":"48.3","4":"51.7","5":"55.1","6":"8.9262","7":"6.1712"},{"1":"Pike","2":"1250.0","3":"52.0","4":"56.0","5":"59.7","6":"10.6863","7":"6.9849"},{"1":"Pike","2":"1600.0","3":"56.0","4":"60.0","5":"64.0","6":"9.6000","7":"6.1440"},{"1":"Pike","2":"1550.0","3":"56.0","4":"60.0","5":"64.0","6":"9.6000","7":"6.1440"},{"1":"Pike","2":"1650.0","3":"59.0","4":"63.4","5":"68.0","6":"10.8120","7":"7.4800"},{"1":"Smelt","2":"6.7","3":"9.3","4":"9.8","5":"10.8","6":"1.7388","7":"1.0476"},{"1":"Smelt","2":"7.5","3":"10.0","4":"10.5","5":"11.6","6":"1.9720","7":"1.1600"},{"1":"Smelt","2":"7.0","3":"10.1","4":"10.6","5":"11.6","6":"1.7284","7":"1.1484"},{"1":"Smelt","2":"9.7","3":"10.4","4":"11.0","5":"12.0","6":"2.1960","7":"1.3800"},{"1":"Smelt","2":"9.8","3":"10.7","4":"11.2","5":"12.4","6":"2.0832","7":"1.2772"},{"1":"Smelt","2":"8.7","3":"10.8","4":"11.3","5":"12.6","6":"1.9782","7":"1.2852"},{"1":"Smelt","2":"10.0","3":"11.3","4":"11.8","5":"13.1","6":"2.2139","7":"1.2838"},{"1":"Smelt","2":"9.9","3":"11.3","4":"11.8","5":"13.1","6":"2.2139","7":"1.1659"},{"1":"Smelt","2":"9.8","3":"11.4","4":"12.0","5":"13.2","6":"2.2044","7":"1.1484"},{"1":"Smelt","2":"12.2","3":"11.5","4":"12.2","5":"13.4","6":"2.0904","7":"1.3936"},{"1":"Smelt","2":"13.4","3":"11.7","4":"12.4","5":"13.5","6":"2.4300","7":"1.2690"},{"1":"Smelt","2":"12.2","3":"12.1","4":"13.0","5":"13.8","6":"2.2770","7":"1.2558"},{"1":"Smelt","2":"19.7","3":"13.2","4":"14.3","5":"15.2","6":"2.8728","7":"2.0672"},{"1":"Smelt","2":"19.9","3":"13.8","4":"15.0","5":"16.2","6":"2.9322","7":"1.8792"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
+  </script>
+</div>
+</div>
+<p>Os nomes de coluna não são muito intuitivos, então vou descrever cada um:</p>
+<ol type="1">
+<li><code>Species</code>: nome da espécie mensurada.</li>
+<li><code>Weight</code>: Peso do peixe em gramas.</li>
+<li><code>Length1</code>: comprimento vertical em cm.</li>
+<li><code>Length2</code>: comprimento diagonal em cm.</li>
+<li><code>Length3</code>: comprimento cruzado em cm.</li>
+<li><code>Height</code>: altura em cm.</li>
+<li><code>Width</code>: largura diagonal em cm.</li>
+</ol>
+<p>Vou definir como minha variável de resposta o peso do peixe, esse é o valor que quero prever em função das demais variáveis explicativas. Para dar início à análise, entao, vou plotar a correlacao de minha varável de resposta com todas as demais variáveis explanatórias e calcular o <span class="math inline">\(R^2\)</span> de cada caso.</p>
+<p>Para plotar tudo de uma vez preciso alterar um pouco a tabela:</p>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="teste_files/figure-html5/unnamed-chunk-2-1.png" width="624" /></p>
+</div>
+<p>Dá para perceber que a correlação do peso com as demais medidas é positiva em todos casos, em alguns mais e outros menos, pela inclinação das retas de regressão (tracejadas azuis). Entretanto, fica difícil entender a robustez dos modelos (na forma de <span class="math inline">\(R^2\)</span>) visualmente. Portanto, vou computar esses valores em uma tabela e ordenar em ordem decrescente:</p>
+<div class="layout-chunk" data-layout="l-body">
+<pre><code># A tibble: 5 x 2
+  variables r_squared
+  &lt;chr&gt;         &lt;dbl&gt;
+1 Length3       0.852
+2 Length2       0.844
+3 Length1       0.839
+4 Width         0.786
+5 Height        0.525</code></pre>
+</div>
+<p>Essa tabela me dá os valores de <span class="math inline">\(R^2\)</span> para cada modelo simples de peso e cada uma das outras variáveis independentemente (não sendo covariáveis).</p>
+<p>As três medidas de comprimento são as que melhor descrevem o comportamento do peso. A altura é a medida menos robusta e a largura fica no meio do caminho. Os valores altos dos modelos que levam em consideração os diferentes tipos de comprimento apontam para uma possível colinearidade entre essas variáveis. Isso significa que, em um modelo multivariado, essas medidas provavelmente seriam redundantes.</p>
+<p>Vou desenvolver isso um pouco mais a frente, mas por hora, como vou fazer uma regressão simples, vou usar a variável <code>Length3</code> como explanatória, dado que ela resultou no maior valor de <span class="math inline">\(R^2\)</span>.</p>
+<p>Abaixo, os coeficientes do modelo:</p>
+<div class="layout-chunk" data-layout="l-body">
+<pre><code>
+Call:
+lm(formula = Weight ~ Length3, data = fish)
+
+Coefficients:
+(Intercept)      Length3  
+    -490.40        28.46  </code></pre>
+</div>
+<p>Segundo esse modelo, existe um incremento de cerca de 28 gramas no peso de um peixe conforme a largura cruzada do peixe aumenta em uma unidade, ou seja, 1 centímetro.</p>
+<p>Abaixo, vou plotar o gráfico da regressão, já atribuindo cores diferentes aos pontos para as diferentes espécies da amostra:</p>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="teste_files/figure-html5/unnamed-chunk-5-1.png" width="624" data-distill-preview=1 /></p>
+</div>
+<p>Um fator interessante de se notar é a provável alta influência dos pontos associados à espécie Pike (em roxo), na inclinação e erro associado da reta, devido ao alto valor tanto de peso quanto de comprimento cruzado de alguns de seus pontos. Essa espécie provavelmente tem maiores valores, em média, de distância de cook para suas observações, o que vai influenciar no comportamento da reta. Podemos checar isso sumarizando o modelo e esses valores, por espécie:</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
+<!--radix_placeholder_article_footer-->
+<!--/radix_placeholder_article_footer-->
+</div>
+
+<div class="d-appendix">
+</div>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+<!--radix_placeholder_site_after_body-->
+<!--/radix_placeholder_site_after_body-->
+<!--radix_placeholder_appendices-->
+<div class="appendix-bottom"></div>
+<!--/radix_placeholder_appendices-->
+<!--radix_placeholder_navigation_after_body-->
+<!--/radix_placeholder_navigation_after_body-->
+
+</body>
+
+</html>
