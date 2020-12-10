@@ -65,9 +65,24 @@ fish %>% # alterando a disposição de colunas para a plotagem
 Dá para perceber que a correlação do peso com as demais medidas é positiva em todos casos, em alguns mais e outros menos, pela inclinação das retas de regressão (tracejadas azuis). Entretanto, fica difícil entender a robustez dos modelos (na forma de $R^2$) visualmente. Portanto, vou computar esses valores em uma tabela e ordenar em ordem decrescente:
 
 ```{r}
+# função para extrair o r2 dos modelos
+rsquared_mod <- function(x) {
+  return(
+    summary( 
+    lm(paste0("Weight ~", x), data = fish)
+    )[["r.squared"]]
+  )
+}
 
- 
+# lista de variaveis explanatorias que vou cruzar com o peso
+explanatory <- names(fish)[3:length(names(fish))]
+
+# tabela com valores de r2 dos modelos em ordem decrescente
+
+tibble(variables=explanatory,r_squared=unlist(map(explanatory,rsquared_mod))) %>% 
+    arrange(desc(r_squared))
 ```
+
 Essa tabela me dá os valores de $R^2$ para cada modelo simples de peso e cada uma das outras variáveis independentemente (não sendo covariáveis). 
 
 As três medidas de comprimento são as que melhor descrevem o comportamento do peso. A altura é a medida menos robusta e a largura fica no meio do caminho. Os valores altos dos modelos que levam em consideração os diferentes tipos de comprimento apontam para uma possível colinearidade entre essas variáveis. Isso significa que, em um modelo multivariado, essas medidas provavelmente seriam redundantes.
@@ -85,7 +100,7 @@ Segundo esse modelo, existe um incremento de cerca de 28 gramas no peso de um pe
 Abaixo, vou plotar o gráfico da regressão, já atribuindo cores diferentes aos pontos para as diferentes espécies da amostra:
 
 
-```{r}
+```{r,preview=TRUE}
 library(paletteer) # pacote com paletas de cores
 
 fish %>% ggplot(aes(y=Weight,x=Length3)) + 

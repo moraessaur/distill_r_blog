@@ -3,8 +3,6 @@ title: 'Curriculum vitae - Lucas Costa Moraes'
 subtitle: 'www.lucasmoraes.io <br> Biólogo, Analista e Fotógrafo <br> moraessaur@gmail.com <br>'
 output: 
   html_document:
-    includes:
-      after_body: footer.html
     theme: cerulean
   
 ---
