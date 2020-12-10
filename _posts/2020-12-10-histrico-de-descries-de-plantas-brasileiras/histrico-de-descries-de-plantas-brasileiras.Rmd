@@ -27,7 +27,30 @@ knitr::opts_chunk$set(echo = FALSE)
 
 # Flora 2020
 
-Nessa análise usei dados extraídos do projeto Flora 2020 do Jardim Botânico do Rio de Janeiro. Como a compilação destes dados foi um processo que exigiu várias etapas, devido à estrutura dos dados, não vou tratar dele nesse post, mas todas etapas na íntegra podem ser conferidos [aqui]().
+Nessa análise usei dados extraídos do projeto Flora 2020 do Jardim Botânico do Rio de Janeiro. Como a compilação destes dados foi um processo que exigiu várias etapas, devido à estrutura dos dados, não vou tratar dele nesse post, mas todas etapas na íntegra podem ser conferidos [aqui](https://moraessaur.github.io/flora2020_analysis/). A idéia aqui era fazer uma análise mais enxuta e pragmática.
+
+Os dados estão organizados em uma tabela denominada `df_master` e contém uma série de informações sobre espécies nativas de plantas brasileiras:
+
+
+```{r}
+library(tidyverse)
+library(rmarkdown)
+
+paged_table( 
+df_master <- read_delim(file="https://www.dropbox.com/s/v19ogg6pmm3iade/df_master.txt?dl=1",
+                        delim="\t")
+)
+```
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -2369,8 +2369,28 @@ body {
 text-align: justify}
 </style>
 <h1 id="flora-2020">Flora 2020</h1>
-<p>Nessa análise usei dados extraídos do projeto Flora 2020 do Jardim Botânico do Rio de Janeiro. Como a compilação destes dados foi um processo que exigiu várias etapas, devido à estrutura dos dados, não vou tratar dele nesse post, mas todas etapas na íntegra podem ser conferidos <a href="">aqui</a>.</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
+<p>Nessa análise usei dados extraídos do projeto Flora 2020 do Jardim Botânico do Rio de Janeiro. Como a compilação destes dados foi um processo que exigiu várias etapas, devido à estrutura dos dados, não vou tratar dele nesse post, mas todas etapas na íntegra podem ser conferidos <a href="https://moraessaur.github.io/flora2020_analysis/">aqui</a>. A idéia aqui era fazer uma análise mais enxuta e pragmática.</p>
+<p>Os dados estão organizados em uma tabela denominada <code>df_master</code> e contém uma série de informações sobre espécies nativas de plantas brasileiras:</p>
+<div class="layout-chunk" data-layout="l-body">
+<pre><code># A tibble: 9,674 x 12
+      id major_group family scientific_name desc_year descriptor
+   &lt;dbl&gt; &lt;chr&gt;       &lt;chr&gt;  &lt;chr&gt;               &lt;dbl&gt; &lt;chr&gt;     
+ 1   264 Angiosperm… Rutac… Adiscanthus fu…      1922 &lt;NA&gt;      
+ 2   280 Angiosperm… Rutac… Andreadoxa fla…      1998 &lt;NA&gt;      
+ 3   285 Angiosperm… Rutac… Angostura brac…      1998 &lt;NA&gt;      
+ 4   301 Angiosperm… Rutac… Angostura long…      1998 &lt;NA&gt;      
+ 5   315 Angiosperm… Rutac… Angostura quin…      1998 &lt;NA&gt;      
+ 6   319 Angiosperm… Rutac… Angostura simp…      1998 &lt;NA&gt;      
+ 7   342 Angiosperm… Rutac… Balfourodendro…      1998 &lt;NA&gt;      
+ 8   343 Angiosperm… Rutac… Balfourodendro…      1896 &lt;NA&gt;      
+ 9   439 Angiosperm… Rutac… Conchocarpus a…      1998 &lt;NA&gt;      
+10   440 Angiosperm… Rutac… Conchocarpus a…      1998 &lt;NA&gt;      
+# … with 9,664 more rows, and 6 more variables: life_form &lt;chr&gt;,
+#   vegetation_type &lt;chr&gt;, endemism &lt;chr&gt;,
+#   phytogeographic_domains &lt;chr&gt;, states &lt;chr&gt;,
+#   vernacular_name &lt;chr&gt;</code></pre>
+</div>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
 </div>
