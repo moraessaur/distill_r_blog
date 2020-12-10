@@ -1,0 +1,23 @@
+---
+title: "Histórico de descrições de plantas brasileiras"
+description: |
+  A short description of the post.
+author:
+  - name: Lucas Moraes
+    url: https://lucasmoraes.io
+date: 09-10-2020
+output:
+  distill::distill_article:
+    self_contained: false
+---
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+Distill is a publication format for scientific and technical writing, native to the web.
+
+Learn more about using Distill at <https://rstudio.github.io/distill>.
+
+
