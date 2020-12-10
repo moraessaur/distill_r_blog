@@ -275,7 +275,7 @@ Os altos valores de VIF para as medidas de comprimento indicam que essas variáv
 
 Esse comportamento pode ser visualizado se plotarmos, por exemplo, o peso em função de dois comprimentos quaisquer:
 
-```{r}
+
 library(plotly)
 
 miau <- fish
@@ -300,7 +300,7 @@ p %>% # da para eu criar uma escala personalizada
   layout(scene = list(xaxis = list(title = "Comprimento cruzado (cm)"), 
                       yaxis = list(title = "Comprimento vertical (cm)"),
                       zaxis = list(title = "Peso (g)")))
-```
+
 
 Os pontos nao se espalham quase nada. Mas nao sei se vale fazer esse grafico aqui. Vale, o fato dos pontos formarem quase uma linha mostra que x e y crescem quase do mesmo jeito, linearmente, reforcando a colinearidade.
 
