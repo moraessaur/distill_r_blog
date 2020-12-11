@@ -273,38 +273,11 @@ fish %>%
 
 Os altos valores de VIF para as medidas de comprimento indicam que essas variáveis são, de fato, redundantes para o modelo, não fazendo diferença qual é utilizada: ambas tem boa perfomance para explicar os valores de peso.
 
-Esse comportamento pode ser visualizado se plotarmos, por exemplo, o peso em função de dois comprimentos quaisquer:
+Esse comportamento pode ser visualizado se plotarmos, por exemplo, o peso em função de dois comprimentos quaisquer. Infelizmente o gráfico interativo não se dá muito bem com o `distill` (que uso para publicar esses posts), então apenas a imagens estática está disponível abaixo:
 
+![](https://www.dropbox.com/s/gno8w8jvorggczk/regression_plane.png?dl=1)
 
-library(plotly)
-
-miau <- fish
-
-auau <- lm(Weight~Length3+Length1, data=miau)
-
-p <- plot_ly(data = miau, z = ~Weight, x = ~Length3, y = ~Length1, 
-             opacity = 0.6, colorbar = list(title = "Peso previsto")) %>%
-  add_markers()
-
-cf.mod <- coef(auau)
-
-
-x1.seq <- seq(min(miau$Length3),max(miau$Length3),length.out=1000)
-x2.seq <- seq(min(miau$Length1),max(miau$Length1),length.out=1000)
-
-z <- t(outer(x1.seq, x2.seq, function(x,y) cf.mod[1]+cf.mod[2]*x+cf.mod[3]*y))
-
-p %>% # da para eu criar uma escala personalizada
-  add_surface(x = ~x1.seq, y = ~x2.seq, z = ~z, 
-              showscale = TRUE,colorscale="Viridis") %>% 
-  layout(scene = list(xaxis = list(title = "Comprimento cruzado (cm)"), 
-                      yaxis = list(title = "Comprimento vertical (cm)"),
-                      zaxis = list(title = "Peso (g)")))
-
-
-Os pontos nao se espalham quase nada. Mas nao sei se vale fazer esse grafico aqui. Vale, o fato dos pontos formarem quase uma linha mostra que x e y crescem quase do mesmo jeito, linearmente, reforcando a colinearidade.
-
-Colocar titulo nesse grafico.
+Felizmente, o gráfico interativo na íntegra pode ser acessado nas minhas GitPages. O que ele mostra é que ambas variáveis de comprimento tem valores muito próximos em todas observações, por isso os pontos se comportam de maneira similar a uma reta, mesmo tendo três dimensões. A colinearidade das variáveis também é reforçada pela alta densidade dos valores de peso no plano, quando os valores de comprimento são altos, independente de qual está sendo levado em consideração.
 
 # Conclusões
 ***
