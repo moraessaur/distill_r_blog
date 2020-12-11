@@ -31,7 +31,6 @@ Nessa análise usei dados extraídos do projeto Flora 2020 do Jardim Botânico d
 
 Os dados estão organizados em uma tabela denominada `df_master` e contém uma série de informações sobre espécies nativas de plantas brasileiras:
 
-
 ```{r}
 library(tidyverse)
 library(rmarkdown)
@@ -49,6 +48,7 @@ df_master <- read_delim(file="https://www.dropbox.com/s/oes7wux3rx5jgel/df_maste
 
 pal=pnw_palette("Bay",5, type = "discrete")
 ```
+
 Das 12 colunas ddessa tabela, vou usar as informações contidas em cinco:
 
 1. `desc_year`: contém o ano de descrição da planta que é basicamente quando ela ficou conhecida pela ciência. 
@@ -238,7 +238,7 @@ Nesse gráfico é possível ver o pico na descrição de algas no ano de 2001. T
 Por último, quero adicionar mais uma variável na análise: os estados de ocorrência das espécies. Além de algas terem tido alto número de descrições em 2001, a referida obra destas trata-se de espécies com ocorrência no estado do Rio de Janeiro. O quão marcante é essa diferença em relação aos demais estados? Isso pode ser observado plotando um *heatmap*:
 
 
-```{r}
+```{r, preview=TRUE}
 df_master$desc_year <- as.character(df_master$desc_year)
 df_temp <- df_stack_parse(df_master,column1 = "desc_year",column2 = "states",slice_value = 3,parse1 = FALSE)
 
