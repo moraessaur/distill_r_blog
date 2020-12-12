@@ -15,6 +15,6 @@ knitr::opts_chunk$set(echo = FALSE)
 
 Meu nome é Lucas Moraes, sou analista de dados, biólogo, cientista e fotógrafo. Essa página é dedicada à alguns projetos, análises e assuntos em geral que quero compartilhar. 
 
-Todos posts aqui tem seus referidos repositórios em meu [GitHub](github.com/moraessaur/) (incluindo esse blog). A maior parte também tem uma versão estendida, com códigos, no formato de GitHub pages (cujos links estão nos posts) e também em meu [Kaggle](https://www.kaggle.com/moraessaur), geralmente em inglês.
+Todos posts aqui tem seus referidos repositórios em meu [GitHub](github.com/moraessaur/) (incluindo esse blog). A maior parte também tem uma versão estendida, com códigos, no formato de [GitHub pages](https://moraessaur.github.io/github_pages_main/) e também em meu [Kaggle](https://www.kaggle.com/moraessaur), geralmente em inglês.
 
-Caso queira saber mais sobre minha trajetória ou entrar em contato, tenho um [site pessoal](https://www.lucasmoraes.org/) com informações adicionais e posso ser encontrado nas redes ([LinkdIn](https://www.linkedin.com/in/lucas-moraes-78944a32/), [Instagram](www.instagram.com/lcmmoraes), [ResearchGate](https://www.researchgate.net/profile/Lucas_Moraes5))
+Caso queira saber mais sobre minha trajetória ou entrar em contato, tenho um [site pessoal](https://www.lucasmoraes.org/) com informações adicionais e posso ser encontrado nas redes ([LinkdIn](https://www.linkedin.com/in/lucas-moraes-78944a32/), [Instagram](www.instagram.com/lcmmoraes) e [ResearchGate](https://www.researchgate.net/profile/Lucas_Moraes5)).
