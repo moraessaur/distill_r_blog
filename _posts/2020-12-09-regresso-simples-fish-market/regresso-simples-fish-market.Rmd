@@ -275,13 +275,12 @@ Esse comportamento pode ser visualizado se plotarmos, por exemplo, o peso em fun
 
 ![](https://www.dropbox.com/s/gno8w8jvorggczk/regression_plane.png?dl=1)
 
-Felizmente, o gráfico interativo na íntegra pode ser acessado nas minhas GitPages. O que ele mostra é que ambas variáveis de comprimento tem valores muito próximos em todas observações, por isso os pontos se comportam de maneira similar a uma reta, mesmo tendo três dimensões. A colinearidade das variáveis também é reforçada pela alta densidade dos valores de peso no plano, quando os valores de comprimento são altos, independente de qual está sendo levado em consideração.
+Felizmente, o gráfico interativo na íntegra pode ser acessado nas [Github pages](https://moraessaur.github.io/fish_market/) ou [Kaggle](https://www.kaggle.com/moraessaur/fish-market-simple-linear-regression) dessa análise. O que ele mostra é que ambas variáveis de comprimento tem valores muito próximos em todas observações, por isso os pontos se comportam de maneira similar a uma reta, mesmo tendo três dimensões. A colinearidade das variáveis também é reforçada pela alta densidade dos valores de peso no plano, quando os valores de comprimento são altos, independente de qual está sendo levado em consideração.
 
 # Conclusões
 ***
 
-O comprimento, em geral, é um bom preditor.
+* As medidas de comprimento são boas preditoras de peso, além de serem colineares.
 
-Alguns peixes causam ruido.
+* Diferentes espécies tem diferentes influências na qualidade da regressão.
 
-As medidas de comprimento apresentam colinearidade. Isso indica que não vale um modelo multivariado aqui.
