@@ -5,8 +5,8 @@
       "title": "Sobre esse blog",
       "description": " ",
       "author": [],
-      "contents": "\n\nbody {\ntext-align: justify}\nMeu nome é Lucas Moraes, sou analista de dados, biólogo, cientista e fotógrafo. Essa página é dedicada à alguns projetos, análises e assuntos em geral que quero compartilhar, também já servindo de portfolio para alguns tipos de atividades com as quais tenho me envolvido. Tenho atuado como analista de dados independente para projetos acadêmicos (e não acadêmicos também), fazendo uso principalmente de programação em R e ferramentas de data science. Caso se interesse em saber mais sobre minha trajetória ou entrar em contato, sugiro uma visita a meu site pessoal ou mesmo um email para moraessaur@gmail.com!\n\n\n\n",
-      "last_modified": "2020-12-12T18:11:45-03:00"
+      "contents": "\n\nbody {\ntext-align: justify}\nMeu nome é Lucas Moraes, sou analista de dados, biólogo, cientista e fotógrafo. Essa página é dedicada à alguns projetos, análises e assuntos em geral que quero compartilhar.\nTodos posts aqui tem rem seus referidos repositórios em meu GitHub (assim incluindo esse blog). A maior parte também tem uma versão extendida com códigos no formato de GitHub pages (cujos links estão nos posts) e também em meu Kaggle, geralmente em inglês.\nCaso queira saber mais sobre minha trajetória ou entrar em contato, tenho um site pessoal com informações adicionais e posso ser encontrado nas redes (LinkdIn, Instagram, ResearchGate)\n\n\n\n",
+      "last_modified": "2020-12-12T18:22:11-03:00"
     },
     {
       "path": "cv.html",
