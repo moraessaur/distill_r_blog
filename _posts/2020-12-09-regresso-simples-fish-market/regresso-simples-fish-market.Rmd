@@ -1,7 +1,7 @@
 ---
 title: "Regressão Linear Simples - Fish Market data"
 description: |
-  Pequena regressão simples usando medidas de peixes de um mercado. Exploro a regressão, fatores que influenciam na qualidade dela e identifico a colinearidade de algumas variáveis. Versões com código podem ser conferidas no meu [Kaggle](https://www.kaggle.com/moraessaur/fish-market-simple-linear-regression) (em inglês) ou nas minhas [Github pages](https://moraessaur.github.io/fish_market/).
+  Pequena regressão simples usando medidas de peixes de um mercado. Exploro a regressão, fatores que influenciam na qualidade dela e identifico a colinearidade de algumas variáveis.
 author:
   - name: Lucas Moraes.
     url: https://lucasmoraes.io
@@ -20,9 +20,7 @@ output:
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
-Pequeno estudo de caso fazendo uso de modelos de regressão linear simples bivariada.
-
-Para fazer essa análise, vou usar o dataset [`Fish`](https://www.kaggle.com/aungpyaeap/fish-market) quem contém diferentes medidas de peixes registrados em um mercado.
+Para fazer essa análise, vou usar o dataset [`Fish`](https://www.kaggle.com/aungpyaeap/fish-market) quem contém diferentes medidas de peixes registrados em um mercado. Versões com código podem ser conferidas no meu [Kaggle](https://www.kaggle.com/moraessaur/fish-market-simple-linear-regression) (em inglês) ou nas minhas [Github pages](https://moraessaur.github.io/fish_market/).
 
 Meu objetivo aqui vai ser escolher uma variável de resposta e a melhor variável que explique seu comportamento.
 

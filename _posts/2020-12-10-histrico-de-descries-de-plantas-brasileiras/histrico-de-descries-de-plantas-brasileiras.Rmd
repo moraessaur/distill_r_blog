@@ -27,7 +27,7 @@ knitr::opts_chunk$set(echo = FALSE)
 
 # Flora 2020
 
-Nessa análise usei dados extraídos do projeto Flora 2020 do Jardim Botânico do Rio de Janeiro. Como a compilação destes dados foi um processo que exigiu várias etapas, devido à estrutura dos dados, não vou tratar dele nesse post, mas todas etapas na íntegra podem ser conferidos [aqui](https://moraessaur.github.io/flora2020_analysis/). A idéia aqui era fazer uma análise mais enxuta e pragmática.
+Nessa análise usei dados extraídos do projeto Flora 2020 do Jardim Botânico do Rio de Janeiro. Como a compilação destes dados foi um processo que exigiu várias etapas, devido à estrutura dos dados, não vou tratar dele nesse post, mas todas etapas na íntegra podem ser conferidos [em minhas Github pages](https://moraessaur.github.io/flora2020_analysis/), na íntegra e com código. A idéia aqui era fazer uma análise mais enxuta e pragmática.
 
 Os dados estão organizados em uma tabela denominada `df_master` e contém uma série de informações sobre espécies nativas de plantas brasileiras:
 
@@ -163,16 +163,19 @@ df_master %>%
                                       desc_year >= 1900 & desc_year < 2000 ~ "Século 20",
                                       desc_year > 2000 ~ "Século 21")) %>% group_by(desc_century) %>% 
   count(major_group) %>% na.omit() %>% 
- ggplot(aes(x=desc_century,y=n, fill = major_group)) + geom_bar(stat='identity', position = 'dodge') +
+ ggplot(aes(x=major_group,y=n, fill = major_group)) + geom_bar(stat='identity', position = 'dodge') +
 ggtitle("Total de espécies descritas (log), por século, agrupado por grupo taxonômico.") +
  scale_fill_manual(values = c("#1380A1",'#177506', "#FAAB18","#f55d42",'#940d8f')) +
   scale_y_log10() + xlab("") + ylab("") + 
   theme_bw() +
   removeGridX() + labs(fill = "Grupo taxonômico") + 
-  theme(panel.border = element_blank(),plot.title = element_text(size=10))
+  theme(panel.border = element_blank(),plot.title = element_text(size=10),
+        axis.text.x=element_blank(),
+        axis.ticks.x=element_blank()) + 
+  facet_wrap(~desc_century,scales = "free_x")
 ```
 
-A escala do gráfico foi convertida para log, dado que a diferença do número de descrições de gimnospermas (relativamente baixo) acaba mascarando a presença delas. Gimnospermas aparecem descritas apenas no século 19 e 21, sendo a maioria no primeiro. Angiospermas correspondem ao grupo com maior número de descrições em todos séculos, embora a diferença entre estas e as algas seja bem menor no século 21. Isso em parte ocorre, de fato, pela alta de descrições de algas no ano de 2001, que teve mais algas descritas que angiospermas:
+A escala do gráfico foi convertida para log, dado que o baixo número de descrições de gimnospermas acaba mascarando a presença delas. Gimnospermas aparecem descritas apenas no século 19 e 21, sendo a maioria no primeiro. Angiospermas correspondem ao grupo com maior número de descrições em todos séculos, embora a diferença entre estas e as algas seja bem menor no século 21. Isso em parte ocorre, de fato, pela alta de descrições de algas no ano de 2001, que teve mais algas descritas que angiospermas:
 
 ```{r}
 df_master %>% filter(desc_year==2001) %>%  
@@ -280,7 +283,7 @@ x %>%
                      sec.axis = sec_axis(~., 
                                          breaks = 1:length(labs2),
                                          labels = labs2),expand = c(0,0)) +
-  xlab("Ano") + ylab("Estado") + ggtitle("Descrição de espécies/ano/estado no Brasil de 1990 a 2020.")
+  xlab("Ano") + ylab("Estado") + ggtitle(" Descrição de espécies/ano/estado no Brasil de 1990 a 2020.")
 ```
 Este gráfico foi reduzido para englobar o intervalo entre 1990 e 2019, entretanto, os valores de densidade se referem à amostra inteira, não apenas a esse intervalo. Fica evidente nele a importância do ano de 2001 (e das algas) no histórico de descrições anuais de plantas brasileiras, mesmo quando em comparação com os outros estados nesse período. ALém disso, embora a tendência na taxa de descrições anuais seja aumentar conforme o tempo passa, a década entre 2000 e 2010 foi a com os maiores valores de descrições anuais de plantas (região demarcada por linhas tracejadas). 
 
