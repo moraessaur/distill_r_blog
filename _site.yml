@@ -14,5 +14,5 @@ navbar:
     - text: "cv"
       href: cv.html
     - icon: fa fa-github
-      href: "https://github.com/moraessaur/"
+      href: "https://github.com/moraessaur/distill_r_blog"
 output: distill::distill_article
