@@ -34,7 +34,7 @@ Nessa análise vou usar uma regressão logística para entender as variáveis qu
 
 Para selecionar as variáveis do modelo, vou usar uma seleção em passo-a-passo ([*stepwise regression*](https://en.wikipedia.org/wiki/Stepwise_regression)). Em seguida, vou comparar a performance de meus diferentes modelos usando curvas ROC e a AUC e analisar os coeficientes do modelo escolhido. Também discuto brevemente a acurácia do modelo, a importância de seus falsos negativos e o desbalanço de classes presente no conjunto de dados.
 
-Exponho parte do código na análise, mas para ter acesso a todo código utilizado, disponibilizo ela em minhas [GitHub pages](). Essa análise também pode ser acessada em meu [Kaggle](), em inglês. O código (totalmente reprodutível), também pode ser extraído do [repositório dessa análise]()!
+Exponho parte do código na análise, mas para ter acesso a todo código utilizado, disponibilizo ela em minhas [GitHub pages](). Essa análise também pode ser acessada em meu [Kaggle](), em inglês e numa versão mais enxuta. O código (totalmente reprodutível), também pode ser extraído do [repositório dessa análise]()!
 
 # Tabela, variáveis e análise exploratória
 ***
