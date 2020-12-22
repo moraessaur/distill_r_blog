@@ -26,7 +26,7 @@ text-align: justify}
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
-Regressão logística usando o dataset [`Logistic regression to predict heart disease`](https://www.kaggle.com/dileep070/heart-disease-prediction-using-logistic-regression), extraído do kaggle. 
+Regressão logística usando o dataset [*Logistic regression to predict heart disease*](https://www.kaggle.com/dileep070/heart-disease-prediction-using-logistic-regression), extraído do Kaggle. 
 
 Este dataset consiste em uma tabela com variáveis utilizadas em um estudo, objetivando analisar a probabilidade de um paciente vir a desenvolver doenças cardíacas em sua próxima década de vida. 
 
