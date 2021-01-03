@@ -77,7 +77,7 @@ ggcorr(df_heart %>% dplyr::select(age,cigsPerDay,totChol,sysBP,diaBP,BMI,heartRa
 ```
 As correlações são fracas entre as variáveis, no geral. Isso aponta, *a priori*, para a não colinearidade entre elas, com exceção da relação entre `sysBP` e `diaBP`, que parecem se correlacionar. Como nesse caso vou fazer uma seleção por passo-a-passo, essas duas variáveis provavelmente não vão ficar juntas no modelo, mas vale ficar atento.
 
-Vou agora checar a propoção de casos positovos e negativos em minha variável de resposta, essa informação está armazenada na coluna `TenYearCHD`:
+Vou agora checar a propoção de casos positivos e negativos em minha variável de resposta, essa informação está armazenada na coluna `TenYearCHD`:
 
 ```{r}
 table(df_heart$TenYearCHD)
