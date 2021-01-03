@@ -8,7 +8,7 @@ author:
 date: 11-09-2020
 categories:
   - Regressão linear
-  - Distância de Cook's
+  - Distância de Cook
   - vif
 output:
   distill::distill_article:
