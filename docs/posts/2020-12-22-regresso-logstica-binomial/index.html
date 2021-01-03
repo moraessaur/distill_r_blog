@@ -2365,7 +2365,7 @@ d-appendix d-footnote-list a.footnote-backlink {
 <nav class="l-text toc figcaption" id="TOC">
 <h3>Contents</h3>
 <ul>
-<li><a href="#tabela-variáveis-e-análise-exploratória">Tabela, variáveis e análise exploratória</a></li>
+<li><a href="#análise-exploratória">Análise exploratória</a></li>
 <li><a href="#seleção-por-passo-a-passo">Seleção por passo-a-passo</a></li>
 <li><a href="#comparando-performances---curvas-roc-e-auc">Comparando performances - curvas ROC e AUC</a></li>
 <li><a href="#intepretando-os-coeficientes">Intepretando os coeficientes</a></li>
@@ -2383,7 +2383,7 @@ text-align: justify}
 <p>Nessa análise vou usar uma regressão logística para entender as variáveis que melhor descrevem a variável de resposta (risco de doenças cardíacas nos próximos dez anos), não incluindo nesse post analises preditivas.</p>
 <p>Para selecionar as variáveis do modelo, vou usar uma seleção em passo-a-passo (<a href="https://en.wikipedia.org/wiki/Stepwise_regression"><em>stepwise regression</em></a>). Em seguida, vou comparar a performance de meus diferentes modelos usando curvas ROC e a AUC e analisar os coeficientes do modelo escolhido. Também discuto brevemente a acurácia do modelo, a importância de seus falsos negativos e o desbalanço de classes presente no conjunto de dados.</p>
 <p>Exponho parte do código na análise, mas para ter acesso a todo código utilizado, disponibilizo ela em minhas <a href="">GitHub pages</a>. Essa análise também pode ser acessada em meu <a href="">Kaggle</a>, em inglês e numa versão mais enxuta. O código (totalmente reprodutível), também pode ser extraído do <a href="">repositório dessa análise</a>!</p>
-<h1 id="tabela-variáveis-e-análise-exploratória">Tabela, variáveis e análise exploratória</h1>
+<h1 id="análise-exploratória">Análise exploratória</h1>
 <hr />
 <p>O primeiro passo é sempre dar uma olhada na estrutura da tabela:</p>
 <div class="layout-chunk" data-layout="l-body">

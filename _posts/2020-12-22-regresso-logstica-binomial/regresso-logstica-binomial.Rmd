@@ -36,7 +36,7 @@ Para selecionar as variáveis do modelo, vou usar uma seleção em passo-a-passo
 
 Exponho parte do código na análise, mas para ter acesso a todo código utilizado, disponibilizo ela em minhas [GitHub pages](). Essa análise também pode ser acessada em meu [Kaggle](), em inglês e numa versão mais enxuta. O código (totalmente reprodutível), também pode ser extraído do [repositório dessa análise]()!
 
-# Tabela, variáveis e análise exploratória
+# Análise exploratória
 ***
 
 O primeiro passo é sempre dar uma olhada na estrutura da tabela:

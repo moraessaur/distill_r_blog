@@ -9,6 +9,7 @@ date: 11-09-2020
 categories:
   - Regressão linear
   - Distância de Cook's
+  - vif
 output:
   distill::distill_article:
     toc: true
@@ -45,7 +46,7 @@ fish <- read_csv("https://www.dropbox.com/s/n45vml0ayoq0omx/fish.csv?dl=1")
 Os nomes de coluna não são muito intuitivos, então vou descrever cada um:
 
 1. `Species`: nome da espécie mensurada.
-2. `Weight`: Peso do peixe em gramas.
+2. `Weight`: peso do peixe em gramas.
 3. `Length1`: comprimento vertical em cm.
 4. `Length2`: comprimento diagonal em cm.
 5. `Length3`: comprimento cruzado em cm.
@@ -54,7 +55,7 @@ Os nomes de coluna não são muito intuitivos, então vou descrever cada um:
 
 Vou definir como minha variável de resposta o peso do peixe, esse é o valor que quero prever em função das demais variáveis explicativas. Para dar início à análise, entao, vou plotar a correlacao de minha varável de resposta com todas as demais variáveis explanatórias e calcular o $R^2$ de cada caso.
 
-Para plotar tudo de uma vez preciso alterar um pouco a tabela:
+Para plotar tudo de uma vez, alterei um pouco a tabela e criei um grid:
 
 ```{r}
 fish %>% # alterando a disposição de colunas para a plotagem
@@ -88,7 +89,7 @@ tibble(variables=explanatory,r_squared=unlist(map(explanatory,rsquared_mod))) %>
     arrange(desc(r_squared))
 ```
 
-Essa tabela me dá os valores de $R^2$ para cada modelo simples de peso e cada uma das outras variáveis independentemente (não sendo covariáveis). 
+Essa tabela me dá os valores de $R^2$ para cada modelo simples de peso em relação a cada uma das outras variáveis independentemente. 
 
 As três medidas de comprimento são as que melhor descrevem o comportamento do peso. A altura é a medida menos robusta e a largura fica no meio do caminho. Os valores altos dos modelos que levam em consideração os diferentes tipos de comprimento apontam para uma possível colinearidade entre essas variáveis. Isso significa que, em um modelo multivariado, essas medidas provavelmente seriam redundantes.
 
@@ -275,16 +276,27 @@ fish %>%
 
 Os altos valores de VIF para as medidas de comprimento indicam que essas variáveis são, de fato, redundantes para o modelo, não fazendo diferença qual é utilizada: ambas tem boa perfomance para explicar os valores de peso.
 
-Esse comportamento pode ser visualizado se plotarmos, por exemplo, o peso em função de dois comprimentos quaisquer. Infelizmente o gráfico interativo não se dá muito bem com o `distill` (que uso para publicar esses posts), então apenas a imagens estática está disponível abaixo:
+Esse comportamento pode ser visualizado se plotarmos, por exemplo, o peso em função de dois comprimentos quaisquer. Infelizmente, o gráfico interativo não se dá muito bem com o `distill` (que uso para publicar esses posts), então apenas a imagens estática está disponível abaixo:
 
 ![](https://www.dropbox.com/s/gno8w8jvorggczk/regression_plane.png?dl=1)
 
-Felizmente, o gráfico interativo na íntegra pode ser acessado nas [Github pages](https://moraessaur.github.io/fish_market/) ou [Kaggle](https://www.kaggle.com/moraessaur/fish-market-simple-linear-regression) dessa análise. O que ele mostra é que ambas variáveis de comprimento tem valores muito próximos em todas observações, por isso os pontos se comportam de maneira similar a uma reta, mesmo tendo três dimensões. A colinearidade das variáveis também é reforçada pela alta densidade dos valores de peso no plano, quando os valores de comprimento são altos, independente de qual está sendo levado em consideração.
+Felizmente, o gráfico interativo na íntegra pode ser acessado nas [Github pages](https://moraessaur.github.io/fish_market/) ou [Kaggle](https://www.kaggle.com/moraessaur/fish-market-simple-linear-regression) dessa análise. O que ele mostra é que ambas variáveis de comprimento tem valores muito próximos em todas observações, por isso os pontos se comportam de maneira similar a uma reta, mesmo tendo três dimensões. A colinearidade das variáveis também é reforçada pela alta densidade dos valores de peso no plano: quando os valores de comprimento são altos, independente de qual está sendo levado em consideração, o valor do peso previsto é alto.
 
 # Conclusões
 ***
 
-* As medidas de comprimento são boas preditoras de peso, além de serem colineares.
+No geral, a primeira conclusão que pode ser tirada da análise, é que o comprimento é a medida que melhor descreve o peso dos peixes, independente de qual é utilizado, uma vez que as medidas de comprimento são colineares.
 
-* Diferentes espécies tem diferentes influências na qualidade da regressão.
+Algumas observações, relativas a determinadas espécies de peixes, representam pontos aberrantes e comprometem a qualidade da regressão, como foi visto quando computando valores de distância de cook. Além disso, a quantidade de observações por espécie de peixe varia bastante, com diversas espécies com número baixo de observações, fator que deve ser levado em consideração na implementação do modelo.
+
+
+
+
+
+
+
+
+
+
+
 
