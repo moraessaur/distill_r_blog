@@ -87,7 +87,7 @@ Alguns valores são substituídos por `NA`. São entradas que contém caracteres
 
 Em seguida vou remover as entradas `NA` dessas duas colunas, na tabela:
 
-```{r}
+```{r, echo=TRUE, message=FALSE}
 transit_cost <- 
   transit_cost %>% 
     filter(!is.na(length), !is.na(real_cost))
@@ -125,7 +125,7 @@ transit_cost %>% ggplot(aes(y=length,x=real_cost)) + # plotando novamente
 ```
 As cores sólidas nos pontos atrapalham a visualização de pontos sobrepostos. Adicionar um efeito de transparência resolve esse problema:
 
-```{r}
+```{r, echo=TRUE, message=FALSE}
 transit_cost %>% ggplot(aes(y=length,x=real_cost)) +
   geom_point(alpha=0.5) + #adicionando transparência aos pontos
   scale_y_log10() + 
@@ -157,7 +157,7 @@ Vou alterar agora o esquema de cores. Quero deixar o plano de fundo escuro e os 
 Abaixo, altero a cor do grid:
 
 
-```{r}
+```{r, echo=TRUE, message=FALSE}
 transit_cost %>% ggplot(aes(y=length,x=real_cost)) +
   geom_point(alpha=0.5) +
   geom_smooth(method="lm",lty=2,color="black",se = FALSE) + 
