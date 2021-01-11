@@ -116,7 +116,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <!--/radix_placeholder_rmarkdown_metadata-->
   
   <script type="text/json" id="radix-resource-manifest">
-  {"type":"character","attributes":{},"value":["histrico-de-descries-de-plantas-brasileiras_files/anchor-4.2.2/anchor.min.js","histrico-de-descries-de-plantas-brasileiras_files/bowser-1.9.3/bowser.min.js","histrico-de-descries-de-plantas-brasileiras_files/distill-2.2.21/template.v2.js","histrico-de-descries-de-plantas-brasileiras_files/figure-html5/unnamed-chunk-1-1.png","histrico-de-descries-de-plantas-brasileiras_files/figure-html5/unnamed-chunk-2-1.png","histrico-de-descries-de-plantas-brasileiras_files/figure-html5/unnamed-chunk-3-1.png","histrico-de-descries-de-plantas-brasileiras_files/figure-html5/unnamed-chunk-4-1.png","histrico-de-descries-de-plantas-brasileiras_files/figure-html5/unnamed-chunk-5-1.png","histrico-de-descries-de-plantas-brasileiras_files/figure-html5/unnamed-chunk-6-1.png","histrico-de-descries-de-plantas-brasileiras_files/figure-html5/unnamed-chunk-7-1.png","histrico-de-descries-de-plantas-brasileiras_files/figure-html5/unnamed-chunk-8-1.png","histrico-de-descries-de-plantas-brasileiras_files/figure-html5/unnamed-chunk-9-1.png","histrico-de-descries-de-plantas-brasileiras_files/header-attrs-2.5/header-attrs.js","histrico-de-descries-de-plantas-brasileiras_files/jquery-1.11.3/jquery.min.js","histrico-de-descries-de-plantas-brasileiras_files/pagedtable-1.1/css/pagedtable.css","histrico-de-descries-de-plantas-brasileiras_files/pagedtable-1.1/js/pagedtable.js","histrico-de-descries-de-plantas-brasileiras_files/webcomponents-2.0.0/webcomponents.js"]}
+  {"type":"character","attributes":{},"value":["histrico-de-descries-de-plantas-brasileiras_files/anchor-4.2.2/anchor.min.js","histrico-de-descries-de-plantas-brasileiras_files/bowser-1.9.3/bowser.min.js","histrico-de-descries-de-plantas-brasileiras_files/distill-2.2.21/template.v2.js","histrico-de-descries-de-plantas-brasileiras_files/figure-html5/unnamed-chunk-1-1.png","histrico-de-descries-de-plantas-brasileiras_files/figure-html5/unnamed-chunk-2-1.png","histrico-de-descries-de-plantas-brasileiras_files/figure-html5/unnamed-chunk-3-1.png","histrico-de-descries-de-plantas-brasileiras_files/figure-html5/unnamed-chunk-4-1.png","histrico-de-descries-de-plantas-brasileiras_files/figure-html5/unnamed-chunk-5-1.png","histrico-de-descries-de-plantas-brasileiras_files/figure-html5/unnamed-chunk-6-1.png","histrico-de-descries-de-plantas-brasileiras_files/figure-html5/unnamed-chunk-7-1.png","histrico-de-descries-de-plantas-brasileiras_files/figure-html5/unnamed-chunk-8-1.png","histrico-de-descries-de-plantas-brasileiras_files/figure-html5/unnamed-chunk-9-1.png","histrico-de-descries-de-plantas-brasileiras_files/header-attrs-2.5/header-attrs.js","histrico-de-descries-de-plantas-brasileiras_files/header-attrs-2.6/header-attrs.js","histrico-de-descries-de-plantas-brasileiras_files/jquery-1.11.3/jquery.min.js","histrico-de-descries-de-plantas-brasileiras_files/pagedtable-1.1/css/pagedtable.css","histrico-de-descries-de-plantas-brasileiras_files/pagedtable-1.1/js/pagedtable.js","histrico-de-descries-de-plantas-brasileiras_files/webcomponents-2.0.0/webcomponents.js"]}
   </script>
   <!--radix_placeholder_navigation_in_header-->
 <meta name="distill:offset" content="../.."/>
@@ -2298,7 +2298,7 @@ d-appendix d-footnote-list a.footnote-backlink {
 	color: var(--hover-color, white);
 }</style>
 <!--/radix_placeholder_distill-->
-  <script src="../../site_libs/header-attrs-2.5/header-attrs.js"></script>
+  <script src="../../site_libs/header-attrs-2.6/header-attrs.js"></script>
   <link href="../../site_libs/pagedtable-1.1/css/pagedtable.css" rel="stylesheet" />
   <script src="../../site_libs/pagedtable-1.1/js/pagedtable.js"></script>
   <script src="../../site_libs/jquery-1.11.3/jquery.min.js"></script>
@@ -2367,9 +2367,9 @@ d-appendix d-footnote-list a.footnote-backlink {
 body {
 text-align: justify}
 </style>
-<h1 id="flora-2020">Flora 2020</h1>
-<p>Nessa análise usei dados extraídos do projeto Flora 2020 do Jardim Botânico do Rio de Janeiro. Como a compilação destes dados foi um processo que exigiu várias etapas, devido à estrutura dos dados, não vou tratar dele nesse post, mas todas etapas na íntegra podem ser conferidos <a href="https://moraessaur.github.io/flora2020_analysis/">em minhas Github pages</a>, na íntegra e com código. A idéia aqui era fazer uma análise mais enxuta e pragmática.</p>
-<p>Os dados estão organizados em uma tabela denominada <code>df_master</code> e contém uma série de informações sobre espécies nativas de plantas brasileiras:</p>
+<h1 id="dados---flora-2020">Dados - Flora 2020</h1>
+<p>Nessa análise usei dados extraídos do projeto <a href="http://floradobrasil.jbrj.gov.br/reflora/PrincipalUC/PrincipalUC.do;jsessionid=1BF8C99966A4F63202D27DF3CFBA80B0">Flora 2020</a> do Jardim Botânico do Rio de Janeiro, para gerar algumas visualizações. Como a compilação destes dados foi um processo longo, não vou tratar dela nesse post, mas todas etapas podem ser conferidas <a href="https://moraessaur.github.io/flora2020_analysis/">em minhas Github pages</a>, na íntegra e com código. A idéia aqui era fazer uma análise mais enxuta e pragmática.</p>
+<p>Os dados estão organizados em uma tabela deinida como <code>df_master</code>, que contém uma série de informações sobre espécies nativas de plantas brasileiras:</p>
 <div class="layout-chunk" data-layout="l-body">
 <div data-pagedtable="false">
 <script data-pagedtable-source type="application/json">
@@ -2379,9 +2379,9 @@ text-align: justify}
 </div>
 <p>Das 12 colunas ddessa tabela, vou usar as informações contidas em cinco:</p>
 <ol type="1">
-<li><code>desc_year</code>: contém o ano de descrição da planta que é basicamente quando ela ficou conhecida pela ciência.</li>
+<li><code>desc_year</code>: ano de descrição da espécie</li>
 <li><code>desc_author</code>: nome do autor vinculado à descrição da espécie.</li>
-<li><code>scientific_name</code>: o nome científico.</li>
+<li><code>scientific_name</code>: nome científico.</li>
 <li><code>states</code>: estados da federação em que a espécie ocorre.</li>
 <li><code>major_group</code>: a qual grande grupo taxonômico ela pertence.</li>
 <li><code>Endemism</code>: se a espécie é endêmica do Brasil ou não.</li>
@@ -2389,16 +2389,16 @@ text-align: justify}
 <p>Vou fazer minhas análises e construir as visualizações com base nessas informações e derivações delas.</p>
 <h1 id="descrições-ao-longo-do-tempo">Descrições ao longo do tempo</h1>
 <hr />
-<p>Como botânico, sei que o número de descrições de plantas brasileiras vem aumentando ao longo dos anos. Mas quero entender como que esses números se comportaram ao longo do tempo. Para isso agrupei o número de espécies descritas por ano e plotei um gráfico de linhas. Já aproveitei o trabalho e dividi também as informações por século, colocando diferentes cores para cada um, no gráfico:</p>
+<p>Como botânico, sei que o número de descrições de plantas brasileiras vem aumentando ao longo dos anos. Mas quero entender como que esses números se comportaram ao longo do tempo. Para isso agrupei o número de espécies descritas por ano e plotei um gráfico de linhas. Já aproveitei o trabalho e dividi também as informações por século, colocando diferentes cores para cada um:</p>
 <div class="layout-chunk" data-layout="l-body">
 <p><img src="histrico-de-descries-de-plantas-brasileiras_files/figure-html5/unnamed-chunk-2-1.png" width="624" /></p>
 </div>
-<p>O sistema linneaniano (o sistema atualmente utilizado para dar nomes às espécies) foi criado em 1750, então é de se esperar que o número de descrições seja menor nessa época). A curva indica um aumento na taxa de descrições ao longo do século 18, seguida por leve diminuição na taxa em meados do século 19, onde finalmente assume uma taxa de crescimento constante a partir daí, com o ano com maior número de descrições sendo 2001. É bastante evidente a elevada taxa de descrição do século 21, informação que fica mais evidente quando comparamos os valores absolutos e a distribuição destes, por século:</p>
+<p>O sistema linneaniano foi criado em 1750, então é de se esperar que o número de descrições seja menor nessa época. A curva indica um aumento na taxa de descrições ao longo do século 18, seguida por leve diminuição na taxa em meados do século 19, onde finalmente assume uma taxa de crescimento constante a partir daí, com o ano com maior número de descrições sendo 2001. É bastante evidente a elevada taxa de descrição do século 21, informação que fica mais evidente quando comparamos os valores absolutos e a distribuição destes, por século:</p>
 <div class="layout-chunk" data-layout="l-body">
 <p><img src="histrico-de-descries-de-plantas-brasileiras_files/figure-html5/unnamed-chunk-3-1.png" width="624" /></p>
 </div>
-<p>Os boxplots deixam claro a alta taxa de descrições do século 21, que tem uma mediana de aproximadamente 300 espécies descritas por ano. Os gráficos de barras (B) indicam que, embora apenas 20% do século 21 tenha passado, ele já tem cerca de 80% do total de descrições do século 20 inteiro.</p>
-<p>Vou dar uma investigada mais a fundo no ano de 2001, olhando os autores mais prolíficos de descrições atribuídos para esse ano:</p>
+<p>Os boxplots deixam clara a alta taxa de descrições do século 21, que tem uma mediana de aproximadamente 300 espécies descritas por ano. Os gráficos de barras (B) indicam que, embora apenas 20% do século 21 tenha passado, ele já tem cerca de 80% do total de descrições do século 20 inteiro.</p>
+<p>Vou dar uma investigada mais a fundo no ano de 2001, olhando os autores mais prolíficos, em termos de descrições, para esse ano:</p>
 <div class="layout-chunk" data-layout="l-body">
 <div data-pagedtable="false">
 <script data-pagedtable-source type="application/json">
@@ -2406,12 +2406,12 @@ text-align: justify}
   </script>
 </div>
 </div>
-<p>O fato de o termo <em>Orgs.</em> aparecer no autor com maior número de descrições de 2001, indica se tratar de uma obra. Ainda, o número de espécies descritas associadas com esse nome é muito maior que a média dos demais autores, o que faz sentido, dado que a obra deve compilar descrições de vários autores. Uma busca rápida me mostrou que um livro entitulado <a href="https://www.researchgate.net/publication/44430175_Biodiversidade_de_algas_de_ambientes_continentais_do_Estado_do_Rio_de_Janeiro_organizadoras_Mariangela_Menezes_Izabel_Cristina_Alves_Dias">“Biodiversidade de algas de ambientes continentais do Estado do Rio de Janeiro”</a>, com as referidas autoras, foi publicado em 2001. Partindo do título, podemos pressupor que uma grande quantidade de algas foram descritas nesse ano.</p>
-<p>Normalmente espera-se que o número absoluto de angiospermas descritas por ano seja maior que os demais grandes grupos, isso fica evidente quando os dados são agrupados por século e grupo taxonômico:</p>
+<p>O fato de o termo <em>Orgs.</em> aparecer no autor com maior número de descrições de 2001, indica se tratar de uma obra. Ainda, o número de espécies descritas associadas com esse nome é muito maior que a média dos demais autores, o que faz sentido, dado que a obra deve compilar descrições de vários. Uma busca rápida me mostrou que um livro entitulado <a href="https://www.researchgate.net/publication/44430175_Biodiversidade_de_algas_de_ambientes_continentais_do_Estado_do_Rio_de_Janeiro_organizadoras_Mariangela_Menezes_Izabel_Cristina_Alves_Dias">“Biodiversidade de algas de ambientes continentais do Estado do Rio de Janeiro”</a>, com as referidas autoras, foi publicado em 2001. Partindo do título, podemos pressupor que uma grande quantidade de algas foram descritas nesse ano.</p>
+<p>Normalmente, espera-se que o número absoluto de angiospermas descritas por ano seja maior que os demais grandes grupos (devido à sua diversidade), isso fica evidente quando os dados são agrupados por século e grupo taxonômico:</p>
 <div class="layout-chunk" data-layout="l-body">
 <p><img src="histrico-de-descries-de-plantas-brasileiras_files/figure-html5/unnamed-chunk-5-1.png" width="624" /></p>
 </div>
-<p>A escala do gráfico foi convertida para log, dado que o baixo número de descrições de gimnospermas acaba mascarando a presença delas. Gimnospermas aparecem descritas apenas no século 19 e 21, sendo a maioria no primeiro. Angiospermas correspondem ao grupo com maior número de descrições em todos séculos, embora a diferença entre estas e as algas seja bem menor no século 21. Isso em parte ocorre, de fato, pela alta de descrições de algas no ano de 2001, que teve mais algas descritas que angiospermas:</p>
+<p>A escala do eixo y foi convertida para log, dado que o baixo número relativo de descrições de gimnospermas acaba mascarando a presença delas. Gimnospermas aparecem descritas apenas no século 19 e 21, sendo a maioria no primeiro. Angiospermas correspondem ao grupo com maior número de descrições em todos séculos, embora a diferença entre estas e as algas seja bem menor no século 21. Isso em parte ocorre, de fato, pela alta de descrições de algas no ano de 2001, que teve mais algas descritas que angiospermas:</p>
 <div class="layout-chunk" data-layout="l-body">
 <p><img src="histrico-de-descries-de-plantas-brasileiras_files/figure-html5/unnamed-chunk-6-1.png" width="624" /></p>
 </div>
@@ -2421,19 +2421,21 @@ text-align: justify}
 <p><img src="histrico-de-descries-de-plantas-brasileiras_files/figure-html5/unnamed-chunk-7-1.png" width="624" /></p>
 </div>
 <p>Nesse gráfico é possível ver o pico na descrição de algas no ano de 2001. Também é interessante o fato de que, ao contrário das demais distribuições, os valores de densidade para as gimnospermas são maiores no século 19, fenômeno observado apenas neste grupo.</p>
-<h1 id="estados">Estados</h1>
+<h1 id="descrições-entre-estados-da-federação">Descrições entre estados da federação</h1>
 <hr />
-<p>Por último, quero adicionar mais uma variável na análise: os estados de ocorrência das espécies. Além de algas terem tido alto número de descrições em 2001, a referida obra destas trata-se de espécies com ocorrência no estado do Rio de Janeiro. O quão marcante é essa diferença em relação aos demais estados? Isso pode ser observado plotando um <em>heatmap</em>:</p>
+<p>Quero adicionar mais uma variável na análise: os estados de ocorrência das espécies. Além de algas terem tido alto número de descrições em 2001, a referida obra destas trata-se de espécies com ocorrência no estado do Rio de Janeiro. O quão marcante é essa diferença em relação aos demais estados? Isso pode ser observado plotando um <em>heatmap</em>:</p>
 <div class="layout-chunk" data-layout="l-body">
 <p><img src="histrico-de-descries-de-plantas-brasileiras_files/figure-html5/unnamed-chunk-8-1.png" width="624" data-distill-preview=1 /></p>
 </div>
-<p>Este gráfico foi reduzido para englobar o intervalo entre 1990 e 2019, entretanto, os valores de densidade se referem à amostra inteira, não apenas a esse intervalo. Fica evidente nele a importância do ano de 2001 (e das algas) no histórico de descrições anuais de plantas brasileiras, mesmo quando em comparação com os outros estados nesse período. ALém disso, embora a tendência na taxa de descrições anuais seja aumentar conforme o tempo passa, a década entre 2000 e 2010 foi a com os maiores valores de descrições anuais de plantas (região demarcada por linhas tracejadas).</p>
-<p>Existe outra característica interessante nesse plot. Os estados foram ordenados de maneira proposital, de acordo com suas regiões. Os estados localizados na parte inferior do gráfico são todos do sudeste do Brasil e pode-se ver uma clara concentração de maiores valores de densidade de descrições entre eles. A parte destes, apenas os estados da Bahia e do Amazonas parecem ter uma concentração significante o suficiente para ser vista no gráfico pelo menos, o que indica um desbalanço no número de coletas entre os estados brasileiros.</p>
+<p>Este gráfico foi reduzido para englobar o intervalo entre 1990 e 2019. Entretanto, os valores de densidade se referem à amostra inteira, não apenas a esse intervalo. Fica evidente nele a importância do ano de 2001 (e das algas) no histórico de descrições anuais de plantas brasileiras, mesmo quando em comparação com os outros estados nesse período. Além disso, embora a tendência na taxa de descrições anuais seja aumentar conforme o tempo passa, a década entre 2000 e 2010 foi a com os maiores valores de descrições anuais de plantas (região demarcada por linhas tracejadas).</p>
+<p>Existe outra característica interessante nesse plot. Os estados foram ordenados, propositadamente, de acordo com suas regiões. Os estados localizados na parte inferior do gráfico são todos do sudeste do Brasil e pode-se ver uma clara concentração de maiores valores de densidade de descrições entre eles. A parte destes, apenas os estados da Bahia e do Amazonas parecem ter uma concentração significante o suficiente para ser vista, no gráfico pelo menos, o que indica um desbalanço no número de coletas entre os estados brasileiros.</p>
 <p>Poderia ser argumentado que essas características estão ligadas à extensão territorial e, embora não seja minha proposta testar isso a fundo, essa questão pode ser testada graficamente: estados maiores tem maior número de espécies descritas?</p>
 <p>Vou juntar mais algumas informações à tabela para plotar o gráfico abaixo: vou incluir a área dos estados em <span class="math inline">\(km^2\)</span>, a proporção de espécies endêmicas do total descrito para cada estado e se os estados contém ou não fronteiras internacionais:</p>
 <div class="layout-chunk" data-layout="l-body">
 <p><img src="histrico-de-descries-de-plantas-brasileiras_files/figure-html5/unnamed-chunk-9-1.png" width="624" /></p>
 </div>
+<p>O tamanho dos pontos no gráfico representa a área dos estados. A cor indica se um estado possui (vermelho) ou não possui (azul), fronteiras com outros <strong>países</strong>. O que pode ser visto, primeiramente, é que não necessariamente um estado grande possui um maior número número de espécies descritas. Nenhum dos maiores estados brasileiros (Amazonas, Pará e Mato Grosso), estão entre aqueles com maior número total de espécies descritas, sendo estes os estados de Minas Gerais, Bahia, Rio de Janeiro e São Paulo. O Rio de Janeiro, inclusive, é um dos menores estados do Brasil, embora tenha alta quantidade de espécies descritas. Isso em parte pode ser explicado por um viés em investimento em pesquisa e esforço de coleta.</p>
+<p>Em relação ao endemismo, o tamanho dos estados parecem ter menos influência ainda na proporção destas. Entretanto, conforme o esperado, a presença de fronteiras internacionais nos estados tem grande relação com a proporção de espécies endêmicas dos mesmos: nenhum estado com proporção de espécies endêmicas maior que 40%, possui fronteiras internacionais. O contrário também é verdadeiro, no sentido de que todos estados com menos de 20% desta proporção possuem fronteiras internacionais.</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
