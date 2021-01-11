@@ -343,15 +343,12 @@ k %>% filter(state != "NA") %>% ggplot(aes(x=species,y=prop,size=area,label=stat
   geom_hline(yintercept=40, linetype = "dashed",size = 0.1) +
   ylab("Proporção de endêmcias (%)") + xlab("Total de espécies") +
   theme_bw() +
-  geom_label_repel(aes(label = temp),
-                   box.padding   = 0.35, 
-                   point.padding = 0.5,
-                   segment.color = 'grey50') +
+  geom_label_repel() +
   scale_size(guide = "none") +
   ggtitle("Relação entre as proporções de espécies endêmicas, total de espécies \ne seus estados de ocorrência") +
   theme(legend.position = "none",panel.border = element_blank()) 
 ```
-O tamanho dos pontos no gráfico representa a área dos estados. A cor indica se um estado possui (vermelho) ou não possui (azul), fronteiras com outros **países**. O que pode ser visto, primeiramente, é que não necessariamente um estado grande possui um maior número número de espécies descritas. Nenhum dos maiores estados brasileiros (Amazonas, Pará e Mato Grosso), estão entre aqueles com maior número total de espécies descritas, sendo estes os estados de Minas Gerais, Bahia, Rio de Janeiro e São Paulo. O Rio de Janeiro, inclusive, é um dos menores estados do Brasil, embora tenha alta quantidade de espécies descritas. Isso em parte pode ser explicado por um viés em investimento em pesquisa e esforço de coleta.
+O tamanho dos pontos e siglas no gráfico representa a área dos estados. A cor indica se um estado possui (vermelho) ou não possui (azul), fronteiras com outros **países**. O que pode ser visto, primeiramente, é que não necessariamente um estado grande possui um maior número número de espécies descritas. Nenhum dos maiores estados brasileiros (Amazonas, Pará e Mato Grosso), estão entre aqueles com maior número total de espécies descritas, sendo estes os estados de Minas Gerais, Bahia, Rio de Janeiro e São Paulo. O Rio de Janeiro, inclusive, é um dos menores estados do Brasil, embora tenha alta quantidade de espécies descritas. Isso em parte pode ser explicado por um viés em investimento em pesquisa e esforço de coleta.
 
 Em relação ao endemismo, o tamanho dos estados parecem ter menos influência ainda na proporção destas. Entretanto, conforme o esperado, a presença de fronteiras internacionais nos estados tem grande relação com a proporção de espécies endêmicas dos mesmos: nenhum estado com proporção de espécies endêmicas maior que 40%, possui fronteiras internacionais. O contrário também é verdadeiro, no sentido de que todos estados com menos de 20% desta proporção possuem fronteiras internacionais.
 
