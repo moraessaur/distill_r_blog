@@ -1,5 +1,5 @@
 ---
-title: "Tidy tuesday: obras de arte"
+title: "Data viz: obras de arte"
 description: |
   Visualização de dados: gráficos facetados
 author:
@@ -26,9 +26,11 @@ text-align: justify}
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
-Post mostrando como criar um gráfico facetado, entre alguns recursos adicionais, a partir de dados do Tidy Tuesday da semana de 12-01-2012!
+Post mostrando como criar um gráfico facetado, entre alguns recursos adicionais, a partir de dados do Tidy Tuesday da semana de 12-01-2012.
 
 Como de praxe, o objetivo aqui é apenas fazer uso dos dados para criar uma visualização, explorando um pouco dos recursos do `ggplot2` e alguns pacotes acessórios.
+
+O dataset atual consistem em informações acerca de aproximadamente 70.000 obras de arte. Mais sobre o dataset pode ser conferido no [repositório dos dados](https://github.com/rfordatascience/tidytuesday/blob/master/data/2021/2021-01-12/readme.md).
 
 Aqui, vou mostrar o passo-a-passo de como cheguei no gráfico abaixo:
 
@@ -193,10 +195,10 @@ artwork %>% filter(medium %in% slice_medium) %>%
     ggtitle("Distribuição dos anos de aquisição de acordo\ncom as técnicas mais frequentes na amostra") # Título do gráfico
 
 ```
+
 E aí está!
 
-A ideia aqui não é analisar os dados, mas algumas conclusões superficiais podem ser extraídas do gráfico:
-
+A ideia aqui não é analisar os dados, mas algumas conclusões superficiais podem ser extraídas do gráfico, como por exemplo o fato de que as obras de grafite e aquarela em papel possuem datas de aquisição mais antigas ou que o contrário ocorre, no caso das obras de água forte  ou litografia em papel.
 
 
 
