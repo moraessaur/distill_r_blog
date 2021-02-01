@@ -1,5 +1,5 @@
 ---
-title: "Tidy tuesday: custo de malhas urbanas"
+title: "Data viz: custo de malhas urbanas"
 description: |
   Passo-a-passo da customização de um gráfico no ggplot2.
 author:

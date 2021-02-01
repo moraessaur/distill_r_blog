@@ -7,9 +7,9 @@ author:
     url: https://lucasmoraes.org
 date: 01-12-2021
 categories:
-  - Data Viz
+  - Data viz
   - facet_wrap()
-  - Tidy Tuesday
+  - Tidy tuesday
   - Leitura rápida
 output:
   distill::distill_article:
